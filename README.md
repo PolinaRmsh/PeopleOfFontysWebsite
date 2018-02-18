@@ -13,7 +13,7 @@ No installation required, just access the platform at [Placeholder link](placeho
 ### Usage
 From the main page, click on ___name tbd___ to be taken to the list. From there, you can either scroll through all of the available entries, or search for a specific person using the search bar in the top right. Once you've found who you were looking for, you can click on their image and you will be taken to their profile page, from where you can see their information, send them an email, or start a conversation.
 
-In addition, you can log in with your Fontys account and edit your own profile, by accessing the top right menu and clicking on the ___My Profile___ option. From there, you can change your picture and bio, along with sending a request to have your profile removed from the platform.
+In addition, you can log in with your Fontys account and edit your own profile, by accessing the top right menu and clicking on the ___My Page___ option. From there, you can change your picture and bio.
 
 ### Additional info
-You can also send a request to be included in this platform! Just shoot us an email at m.voicu@student.fontys.nl or (polina's email here), with the profile picture and bio you want, or simply, just an email with the subject stating that you wish to be included and you can later modify your profile to your liking.
+You can also send us your comments/ideas about the website! Just shoot us an email at m.voicu@student.fontys.nl or p.rymshina@student.fontys.nl.
