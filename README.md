@@ -5,7 +5,6 @@ This is a project for the WEB1 module made by Polina Rymshina and Matei Voicu, o
 ### Features
 * View info about all the teachers and students of Fontys
 * Easily send them an email
-* Start a conversation with them 
 
 ### Installation
 No installation required, just access the platform at [Placeholder link](placeholder.link.com)!
