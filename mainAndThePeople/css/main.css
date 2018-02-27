@@ -1,56 +1,70 @@
-/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
-
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
 html {
     color: #222;
     font-size: 1em;
     font-family: Helvetica, serif;
     line-height: 1.7;
 }
+/* /////////////////////////////////////////////////////////////// */
+/* Styling the top bar which will appear on every page */
 .navbar {
     background-color: #007FFF;
     overflow: hidden;
     padding: 14px 16px;
 }
 
-/* Style the links inside the navigation bar */
+/* Put the links to other sections to the right of the navbar */
 .navbar .header-right {
     float: right;
-    color: white;
     text-align: center;
-    text-decoration: none;
-    font-size: 17px;
-    border-bottom: 3px solid transparent;
 }
 
-/* Change the color of links on hover */
+/* Style the links inside the navigation bar */
+.navbar .header-right a{
+    color: white;
+    font-family: Helvetica,serif;
+    font-size: 17px;
+    border-bottom: 3px solid transparent;
+    text-decoration: none;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+/* Line under the links on hover */
 .navbar .header-right a:hover {
     border-bottom: 3px solid #1300FF;
-    color: white;
 }
-/* On small screens the menu will be hidden in an icon*/
-.navbar .header-right .icon {
+
+/* Styling the active tab */
+.navbar .header-right .active {
+    background-color: inherit;
+}
+
+/* NOT WORKING         On small screens the menu will be hidden in an icon*/
+.navbar .header-right .smallMenuIcon {
     display: none;
 }
-.navbar .header-left .btn {
+
+/* Styling the logo on the left and the website name */
+/* Logo */
+.navbar .header-left .logoImage img{
+    float: left;
+    width: 50px;
+    height: 35px;
+    border: 0;
+    margin-right: 20px;
+}
+/* Name */
+.navbar .header-left .logoBtn {
     float: left;
     border: none;
     text-align: center;
     background-color: inherit;
-
+    color: white;
     font-size: 17px;
     font-family: Verdana, serif;
     cursor: pointer;
     display: inline-block;
+    text-decoration: none;
 }
 
 ::-moz-selection {
@@ -62,12 +76,15 @@ html {
     background: #b3d4fc;
     text-shadow: none;
 }
+/* /////////////////////////////////////////////////// */
 
+/* /////////////////////////////////////////////////// */
+/* RESPONSIVE DESIGN NOT WORKING */
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
     .header-right a:not(:first-child) {display: none;}
-    .header-right a.icon {
-        float: right;
+    .header-right a.smallMenuIcon {
+        float: left;
         display: block;
     }
 }
@@ -75,7 +92,7 @@ html {
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
     .header-right.responsive {position: relative;}
-    .header-right.responsive a.icon {
+    .header-right.responsive a.smallMenuIcon {
         position: absolute;
         right: 0;
         top: 0;
@@ -86,6 +103,10 @@ html {
         text-align: left;
     }
 }
+/* ///////////////////////////////////////////// */
+
+/* ///////////////////////////////////////////// */
+/* Main page picture slideshow */
 
 * {box-sizing:border-box}
 
@@ -180,6 +201,11 @@ html {
     from {opacity: .4}
     to {opacity: 1}
 }
+
+/* ////////////////////////////////////////////// */
+
+/* ////////////////////////////////////////////// */
+/* Main Page button MyPeople */
 .button {
     background-color: #00FFAB;
     border: none;
@@ -193,6 +219,8 @@ html {
     margin-left: 28px;
 }
 .button3 {border-radius: 8px;}
+
+/* Person of the day picture and text */
 .column {
     float: left;
     padding: 10px;
@@ -206,14 +234,39 @@ html {
     width: 75%;
 }
 
+.left img{
+    width: 200px;
+}
+/* ////////////////////////////////////////////// */
+
+/* ////////////////////////////////////////////// */
+/* thePeople page top menu (Teachers/Students) and search */
+
 .middleMenu{
     margin: 1.9em 10px 2em;
     position: relative;
 }
-.middleMenubuttons{
+
+/* Teachers/Students buttons */
+.middleMenuButtons{
     float: left;
 }
-.middleMenusearch input[type=text]{
+.middleMenuButtons {
+    background-color: #1300FF;
+    padding: 5px;
+}
+.middleMenuButtons a{
+    color: white;
+    text-decoration: none;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+.middleMenuButtons a:hover{
+    border-bottom: 3px solid #007FFF;
+}
+
+/* Search */
+.middleMenuSearch input[type=text]{
     float: right;
     padding: 10px;
     font-size: 17px;
@@ -221,7 +274,7 @@ html {
     width: 300px;
     background: #f1f1f1;
 }
-.middleMenusearch button{
+.middleMenuSearch button{
     float: right;
     width: 50px;
     padding: 10px;
@@ -232,7 +285,7 @@ html {
     border-left: none; /* Prevent double borders */
     cursor: pointer;
 }
-.middleMenusearch button:hover{
+.middleMenuSearch button:hover{
     background: #0b7dda;
 }
 .middleMenu::after{
@@ -240,7 +293,11 @@ html {
     clear: both;
     display: table;
 }
-/* Create four equal columns that floats next to each other */
+
+/* /////////////////////////////////////// */
+/* The People pictures of users */
+
+/* Create six equal columns that float next to each other */
 .user {
     float: left;
     margin-left: 5px;
@@ -254,28 +311,30 @@ html {
     clear: both;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
+/* Responsive layout - makes a two column-layout instead of six columns */
 @media (max-width: 900px) {
     .user {
-        width: 50%;
+        width: 40%;
     }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media (max-width: 600px) {
     .user {
-        width: 100%;
+        width: 95%;
     }
 }
 
+/* Setting the user pictures style */
 .user {
     position: relative;
 }
-.userimage {
+.userImage {
     display: block;
     width: 100%;
     height: auto;
 }
+/* Text and buttons appearing when hovering over the image */
 .overlay {
     position: absolute;
     top: 0;
@@ -286,12 +345,12 @@ html {
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #008CBA;
+    background-color: #007FFF;
 }
 .user:hover .overlay {
     opacity: 1;
 }
-.text {
+.userInfo {
     color: white;
     font-size: 20px;
     position: absolute;
@@ -301,6 +360,20 @@ html {
     -ms-transform: translate(-50%, -50%);
     text-align: center;
 }
+.contactLink {
+    float: right;
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+.contactLink:hover{
+    border-bottom: 3px solid #1300FF;
+}
+
+/* ////////////////////////////////////////////// */
+
+/* ////////////////////////////////////////////// */
+/* MISC */
 
 /*
  * A better looking default horizontal rule
