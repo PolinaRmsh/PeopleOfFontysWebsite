@@ -113,10 +113,14 @@ html {
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: 1000px;
+    max-width: 70%;
     position: relative;
     margin: auto;
 }
+.mySlides img{
+    width: 100%;
+}
+
 
 /* Hide the images by default */
 .mySlides {
