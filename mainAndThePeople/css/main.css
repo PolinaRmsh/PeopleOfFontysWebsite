@@ -424,9 +424,11 @@ html {
 #about-news-content-text, #about-idea-content-text{
     display: inline-block;
     width: 66%;
+    padding-left: 5%;
 }
 #about-news-content-picture, #about-idea-content-picture{
     margin-bottom: 50px;
+    padding-right: 2%;
     display: inline-block;
     float: right;
 }
@@ -456,6 +458,10 @@ html {
 .mypage-bottom-info > p{
     padding-bottom: 20px;
     border-bottom: 1px black solid;
+    padding-left: 5%;
+}
+.mypage-bottom-info > h3{
+    padding-left: 5%;
 }
 #mypage-interests-content{
     border-bottom: none;
