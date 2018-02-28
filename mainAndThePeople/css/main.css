@@ -392,6 +392,7 @@ html {
 .contactLink:hover{
     border-bottom: 3px solid #1300FF;
 }
+
 /* ABOUT PAGES */
 .about-navbar{
     margin-left: auto;
@@ -403,7 +404,7 @@ html {
     border-radius: 100px;
     text-align: center;
     text-decoration: none;
-    color: white;
+    color: inherit;
 }
 
 .about-navbar .active{
