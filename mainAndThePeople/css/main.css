@@ -37,6 +37,7 @@ html {
 /* Styling the active tab */
 .navbar .header-right .active {
     background-color: inherit;
+    border-bottom: 3px solid white;
 }
 
 /* NOT WORKING         On small screens the menu will be hidden in an icon*/
@@ -391,7 +392,74 @@ html {
 .contactLink:hover{
     border-bottom: 3px solid #1300FF;
 }
+/* ABOUT PAGES */
+.about-navbar{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    width: 80%;
+    background-color:#003FFF;
+    border-radius: 100px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
 
+.about-navbar .active{
+    background-color: inherit;
+    text-decoration: underline;
+    
+}
+.about-navbar a{
+    color: white;
+    text-decoration: none; 
+}
+#about-navbar-left{
+    padding-right: 33%;
+}
+#about-navbar-right{
+    padding-left: 33%;
+}
+#about-news-content-text, #about-idea-content-text{
+    display: inline-block;
+    width: 66%;
+}
+#about-news-content-picture, #about-idea-content-picture{
+    margin-bottom: 50px;
+    display: inline-block;
+    float: right;
+}
+.about-contact-content-wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    width: 33%;
+    text-align: center;
+}
+
+/*MY PAGE*/
+.mypage-top-info{
+    display: inline-block;
+}
+.mypage-top-text{
+    display: inherit;
+    float: right;
+    
+}
+.mypage-top-picture{
+    display: inherit;
+    width: 128px;
+    margin: 10px;
+    padding: 0px;
+    
+}
+.mypage-bottom-info > p{
+    padding-bottom: 20px;
+    border-bottom: 1px black solid;
+}
+#mypage-interests-content{
+    border-bottom: none;
+}
 /* ////////////////////////////////////////////// */
 
 /* ////////////////////////////////////////////// */
