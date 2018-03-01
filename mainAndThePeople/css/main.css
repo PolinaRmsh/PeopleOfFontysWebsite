@@ -37,7 +37,8 @@ html {
 /* Styling the active tab */
 .navbar .header-right .active {
     background-color: inherit;
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid rgba(255,255,255,0.25);
+
 }
 
 /* NOT WORKING         On small screens the menu will be hidden in an icon*/
@@ -423,11 +424,11 @@ html {
 .about-navbar .active{
     background-color: inherit;
     text-decoration: underline;
-    
+
 }
 .about-navbar a{
     color: white;
-    text-decoration: none; 
+    text-decoration: none;
 }
 #about-navbar-left{
     padding-right: 33%;
@@ -460,14 +461,14 @@ html {
 .mypage-top-text{
     display: inherit;
     float: right;
-    
+
 }
 .mypage-top-picture{
     display: inherit;
     width: 128px;
     margin: 10px;
     padding: 0px;
-    
+
 }
 .mypage-bottom-info > p{
     padding-bottom: 20px;
