@@ -37,7 +37,8 @@ html {
 /* Styling the active tab */
 .navbar .header-right .active {
     background-color: inherit;
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid rgba(255,255,255,0.25);
+
 }
 
 /* NOT WORKING         On small screens the menu will be hidden in an icon*/
@@ -173,10 +174,24 @@ html {
     width: 80%;
     text-align: center;
 }
+
+/* Caption text scalable */
 @media (max-width: 900px){
-    .caption .longcap{
+    .caption {
+        font-size: 90%;
         top: 80%;
         left: 8%;
+        position: absolute;
+        text-align: center;
+    }
+}
+@media (max-width: 540px){
+    .caption {
+        font-size: 50%;
+        top: 80%;
+        left: 8%;
+        position: absolute;
+        text-align: center;
     }
 }
 
@@ -409,11 +424,11 @@ html {
 .about-navbar .active{
     background-color: inherit;
     text-decoration: underline;
-    
+
 }
 .about-navbar a{
     color: white;
-    text-decoration: none; 
+    text-decoration: none;
 }
 #about-navbar-left{
     padding-right: 33%;
@@ -444,12 +459,19 @@ html {
     display: inline-flex;
 }
 .mypage-top-text{
+<<<<<<< HEAD
     display: block;
+=======
+    display: inherit;
+    float: right;
+
+>>>>>>> 47a8ccc9549144ee6bca8ca120bd0696da7303bf
 }
 .mypage-top-picture{
     display: inherit;
     width: 128px;
     margin: 10px;
+<<<<<<< HEAD
 }
 #contact-info{
     display: inline-block;
@@ -464,6 +486,10 @@ html {
 }
 #top-info-separator{
     border-bottom: 1px black solid;
+=======
+    padding: 0px;
+
+>>>>>>> 47a8ccc9549144ee6bca8ca120bd0696da7303bf
 }
 .mypage-bottom-info > p{
     padding-bottom: 20px;
