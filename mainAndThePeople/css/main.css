@@ -4,6 +4,9 @@ html {
     font-family: Helvetica, serif;
     line-height: 1.7;
 }
+body {
+    margin: 0;
+}
 /* /////////////////////////////////////////////////////////////// */
 /* Styling the top bar which will appear on every page */
 .navbar {
