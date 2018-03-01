@@ -456,19 +456,40 @@ html {
 
 /*MY PAGE*/
 .mypage-top-info{
-    display: inline-block;
+    display: inline-flex;
 }
 .mypage-top-text{
+<<<<<<< HEAD
+    display: block;
+=======
     display: inherit;
     float: right;
 
+>>>>>>> 47a8ccc9549144ee6bca8ca120bd0696da7303bf
 }
 .mypage-top-picture{
     display: inherit;
     width: 128px;
     margin: 10px;
+<<<<<<< HEAD
+}
+#contact-info{
+    display: inline-block;
+    float:right;
+    width: 180px;
+    border: 1px black solid;
+    padding: 5px;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+#person-about{
+}
+#top-info-separator{
+    border-bottom: 1px black solid;
+=======
     padding: 0px;
 
+>>>>>>> 47a8ccc9549144ee6bca8ca120bd0696da7303bf
 }
 .mypage-bottom-info > p{
     padding-bottom: 20px;
