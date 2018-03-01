@@ -477,7 +477,11 @@ html {
     margin-top: 20px;
     margin-right: 50px;
 }
+#person-name{
+}
 #person-about{
+    position: relative;
+    top: 100px; 
 }
 #top-info-separator{
     border-bottom: 1px black solid;
