@@ -468,28 +468,13 @@ html {
     display: inline-flex;
 }
 .mypage-top-text{
-<<<<<<< HEAD
-
-    display: block;
-
-    display: inherit;
-    float: right;
-
-
-=======
     display: block;
     float: right;
-
->>>>>>> b90e5c9a1d3eb47f70c97c3c0f0bc618c395ebeb
 }
 .mypage-top-picture{
     display: inherit;
     width: 128px;
     margin: 10px;
-<<<<<<< HEAD
-
-=======
->>>>>>> b90e5c9a1d3eb47f70c97c3c0f0bc618c395ebeb
 }
 #contact-info{
     display: inline-block;
