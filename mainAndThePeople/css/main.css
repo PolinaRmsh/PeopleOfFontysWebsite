@@ -468,6 +468,7 @@ html {
     display: inline-flex;
 }
 .mypage-top-text{
+<<<<<<< HEAD
 
     display: block;
 
@@ -475,12 +476,20 @@ html {
     float: right;
 
 
+=======
+    display: block;
+    float: right;
+
+>>>>>>> b90e5c9a1d3eb47f70c97c3c0f0bc618c395ebeb
 }
 .mypage-top-picture{
     display: inherit;
     width: 128px;
     margin: 10px;
+<<<<<<< HEAD
 
+=======
+>>>>>>> b90e5c9a1d3eb47f70c97c3c0f0bc618c395ebeb
 }
 #contact-info{
     display: inline-block;
@@ -495,21 +504,14 @@ html {
 }
 #top-info-separator{
     border-bottom: 1px black solid;
-=======
     padding: 0px;
-
->>>>>>> 47a8ccc9549144ee6bca8ca120bd0696da7303bf
 }
 .mypage-bottom-info > p{
     padding-bottom: 20px;
-    border-bottom: 1px black solid;
     padding-left: 5%;
 }
 .mypage-bottom-info > h3{
     padding-left: 5%;
-}
-#mypage-interests-content{
-    border-bottom: none;
 }
 /* ////////////////////////////////////////////// */
 
@@ -542,6 +544,7 @@ img,
 svg,
 video {
     vertical-align: middle;
+<<<<<<< HEAD
 }
 
 /*
@@ -769,3 +772,6 @@ textarea {
         page-break-after: avoid;
     }
 }
+=======
+}
+>>>>>>> b90e5c9a1d3eb47f70c97c3c0f0bc618c395ebeb
