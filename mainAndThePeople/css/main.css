@@ -44,6 +44,7 @@ html {
 /* NOT WORKING         On small screens the menu will be hidden in an icon*/
 .navbar .header-right .smallMenuIcon {
     display: none;
+    float: left;
 }
 
 /* Styling the logo on the left and the website name */
@@ -85,22 +86,22 @@ html {
 /* RESPONSIVE DESIGN NOT WORKING */
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
-    .header-right a:not(:first-child) {display: none;}
-    .header-right a.smallMenuIcon {
-        float: left;
+    .navbar .header-right a:not(:first-child) {display: none;}
+    .navbar .header-right a.smallMenuIcon {
+        float: right;
         display: block;
     }
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
-    .header-right.responsive {position: relative;}
-    .header-right.responsive a.smallMenuIcon {
-        position: absolute;
+    .header-right.responsiveHeader {position: inherit;}
+    .header-right.responsiveHeader .smallMenuIcon {
+        position: relative;
         right: 0;
         top: 0;
     }
-    .header-right.responsive a {
+    .header-right.responsiveHeader a {
         float: none;
         display: block;
         text-align: left;
@@ -468,7 +469,7 @@ html {
     display: inline-flex;
 }
 .mypage-top-text{
-<<<<<<< HEAD
+
 
     display: block;
 
@@ -476,20 +477,16 @@ html {
     float: right;
 
 
-=======
+
     display: block;
     float: right;
 
->>>>>>> b90e5c9a1d3eb47f70c97c3c0f0bc618c395ebeb
 }
 .mypage-top-picture{
     display: inherit;
     width: 128px;
     margin: 10px;
-<<<<<<< HEAD
 
-=======
->>>>>>> b90e5c9a1d3eb47f70c97c3c0f0bc618c395ebeb
 }
 #contact-info{
     display: inline-block;
@@ -544,7 +541,7 @@ img,
 svg,
 video {
     vertical-align: middle;
-<<<<<<< HEAD
+
 }
 
 /*
@@ -772,6 +769,6 @@ textarea {
         page-break-after: avoid;
     }
 }
-=======
-}
->>>>>>> b90e5c9a1d3eb47f70c97c3c0f0bc618c395ebeb
+
+
+
