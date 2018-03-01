@@ -1,4 +1,4 @@
-function myFunction() {
+function turnNavbarLinksIntoIcon() {
     var x = document.getElementById("headerRight");
     if (x.className === "header-right") {
         x.className += " responsive";
