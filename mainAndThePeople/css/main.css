@@ -172,10 +172,24 @@ html {
     width: 80%;
     text-align: center;
 }
+
+/* Caption text scalable */
 @media (max-width: 900px){
-    .caption .longcap{
+    .caption {
+        font-size: 90%;
         top: 80%;
         left: 8%;
+        position: absolute;
+        text-align: center;
+    }
+}
+@media (max-width: 540px){
+    .caption {
+        font-size: 50%;
+        top: 80%;
+        left: 8%;
+        position: absolute;
+        text-align: center;
     }
 }
 
