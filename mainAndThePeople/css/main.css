@@ -176,7 +176,7 @@ html {
 }
 
 /* Caption text scalable */
-@media (max-width: 900px){
+@media (max-width: 1250px){
     .caption {
         font-size: 90%;
         top: 80%;
@@ -188,6 +188,15 @@ html {
 @media (max-width: 540px){
     .caption {
         font-size: 50%;
+        top: 80%;
+        left: 8%;
+        position: absolute;
+        text-align: center;
+    }
+}
+@media (max-width: 350px) {
+    .caption {
+        font-size: 30%;
         top: 80%;
         left: 8%;
         position: absolute;
@@ -459,19 +468,19 @@ html {
     display: inline-flex;
 }
 .mypage-top-text{
-<<<<<<< HEAD
+
     display: block;
-=======
+
     display: inherit;
     float: right;
 
->>>>>>> 47a8ccc9549144ee6bca8ca120bd0696da7303bf
+
 }
 .mypage-top-picture{
     display: inherit;
     width: 128px;
     margin: 10px;
-<<<<<<< HEAD
+
 }
 #contact-info{
     display: inline-block;
