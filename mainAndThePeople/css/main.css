@@ -441,19 +441,29 @@ html {
 
 /*MY PAGE*/
 .mypage-top-info{
-    display: inline-block;
+    display: inline-flex;
 }
 .mypage-top-text{
-    display: inherit;
-    float: right;
-    
+    display: block;
 }
 .mypage-top-picture{
     display: inherit;
     width: 128px;
     margin: 10px;
-    padding: 0px;
-    
+}
+#contact-info{
+    display: inline-block;
+    float:right;
+    width: 180px;
+    border: 1px black solid;
+    padding: 5px;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+#person-about{
+}
+#top-info-separator{
+    border-bottom: 1px black solid;
 }
 .mypage-bottom-info > p{
     padding-bottom: 20px;
