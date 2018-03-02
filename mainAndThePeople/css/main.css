@@ -55,11 +55,14 @@ body {
 /* Logo */
 .navbar .header-left .logoImage img{
     float: left;
-    width: 26pt;
-    height: 26pt;
-    border: 0;
+    width: 28.5pt;
+    height: 28.5pt;
+    border-radius: 50%;
+    border: 8pt;
+    display: inline-block;
     margin-right: 13pt;
     margin-left: 1pt;
+    background-color: white;
 }
 /* Name */
 .navbar .header-left .logoBtn {
