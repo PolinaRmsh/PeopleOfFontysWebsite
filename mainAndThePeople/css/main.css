@@ -384,24 +384,44 @@ hr {
 /* Teachers/Students buttons */
 .middleMenuButtons {
     float: left;
-    background-color: #303F9F;
     padding: 10pt;
     left: 0;
     position: absolute;
     display: inline;
+    margin-top: -10px;
 }
 
 .middleMenuButtons a {
     color: white;
     text-decoration: none;
-    padding-right: 25pt;
-    padding-left: 25pt;
-    size: 17pt;
+    padding-right: 20pt;
+    padding-left: 20pt;
+    size: 25pt;
+    margin-top: 10px;
+    position: relative;
+    top: 10px;
+    left: 20px;
 }
 
-.middleMenuButtons a:hover {
-    border-bottom: 3px solid rgba(197, 202, 233, 0.8);
+/*.middleMenuButtons a:hover {*/
+    /*border-bottom: 3px solid rgba(197, 202, 233, 0.8);*/
+/*}*/
+.flagThing.menu{
+    width: 30px;
+    background-color: #303F9F;
+    -webkit-transition: width 1s;
+    transition: width 1s;
 }
+
+.flagThing.menu.bottom{
+    position:relative;
+    top: 60px;
+    margin-left: -13px;
+}
+.flagThing.menu:hover{
+    width: 220px;
+}
+
 
 /* Search */
 .middleMenuSearch{
@@ -444,6 +464,8 @@ hr {
 
 /* Create six equal columns that float next to each other */
 .user {
+    position: relative;
+    top: 60px;
     float: left;
     margin-left: 5px;
     width: 16%;
