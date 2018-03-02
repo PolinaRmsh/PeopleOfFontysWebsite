@@ -309,12 +309,10 @@ hr {
 
 /* Main Page button MyPeople */
 .button3 {
-    background-color: transparent;
+    background-color: inherit;
     border: none;
     color: white;
-
     margin-left: 4%;
-
     margin-top: 2px;
     text-align: center;
     text-decoration: none;
@@ -323,6 +321,7 @@ hr {
     font-size: 30px;
     position: relative;
 }
+
 .flagThing {
     background-color: #FF5722;
     position: absolute;
@@ -345,7 +344,8 @@ hr {
     top: 0;
 
 }
-.flagThing:hover{
+
+.flagThing:hover {
     width: 380px;
 }
 
@@ -404,30 +404,31 @@ hr {
 }
 
 /*.middleMenuButtons a:hover {*/
-    /*border-bottom: 3px solid rgba(197, 202, 233, 0.8);*/
+/*border-bottom: 3px solid rgba(197, 202, 233, 0.8);*/
 /*}*/
-.flagThing.menu{
+.flagThing.menu {
     width: 30px;
     background-color: #303F9F;
     -webkit-transition: width 1s;
     transition: width 1s;
 }
 
-.flagThing.menu.bottom{
-    position:relative;
+.flagThing.menu.bottom {
+    position: relative;
     top: 60px;
     margin-left: -13px;
 }
-.flagThing.menu:hover{
+
+.flagThing.menu:hover {
     width: 220px;
 }
 
-
 /* Search */
-.middleMenuSearch{
+.middleMenuSearch {
     margin: auto;
     display: inline;
 }
+
 .middleMenuSearch input[type=text] {
     float: right;
     padding: 10px;
@@ -438,6 +439,7 @@ hr {
 }
 
 .middleMenuSearch button {
+    position: inherit;
     float: right;
     width: 50px;
     padding: 10px;
@@ -463,12 +465,20 @@ hr {
 /* The People pictures of users */
 
 /* Create six equal columns that float next to each other */
+.pics {
+    margin: auto;
+    width: 100%;
+}
+
 .user {
     position: relative;
     top: 60px;
     float: left;
-    margin-left: 5px;
     width: 16%;
+}
+
+.user.two {
+    margin-left: 10.37px;
 }
 
 /* Clear floats */
