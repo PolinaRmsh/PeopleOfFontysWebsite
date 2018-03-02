@@ -391,15 +391,21 @@ hr {
     margin-top: -10px;
 }
 
+/* Student page */
+.middleMenuButtons.on{
+
+}
+
 .middleMenuButtons a {
     color: white;
     text-decoration: none;
+    font-family: 'Bangers', cursive;
     padding-right: 20pt;
     padding-left: 20pt;
-    size: 25pt;
+    font-size: 17pt;
     margin-top: 10px;
     position: relative;
-    top: 10px;
+    top: 8px;
     left: 20px;
 }
 
@@ -436,6 +442,8 @@ hr {
     border: 1px solid grey;
     width: 300px;
     background: #f1f1f1;
+    border-radius: 8px 0 0 8px;
+
 }
 
 .middleMenuSearch button {
@@ -443,16 +451,17 @@ hr {
     float: right;
     width: 50px;
     padding: 10px;
-    background: #2196F3;
+    background: #FF5722;
     color: white;
     font-size: 17px;
     border: 1px solid grey;
     border-left: none; /* Prevent double borders */
     cursor: pointer;
+    border-radius: 0 8px 8px 0;
 }
 
 .middleMenuSearch button:hover {
-    background: #0b7dda;
+    background: #3F51B5;
 }
 
 .middleMenu::after {
@@ -524,7 +533,7 @@ hr {
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #007FFF;
+    background-color: #FF5722;
 }
 
 .user:hover .overlay {
@@ -551,7 +560,8 @@ hr {
 }
 
 .contactLink:hover {
-    border-bottom: 3px solid #1300FF;
+    /*border-bottom: 3px solid #3F51B5;*/
+    border-bottom: 3px solid rgba(197, 202, 233, 0.8);
 }
 
 /* ABOUT PAGES */
