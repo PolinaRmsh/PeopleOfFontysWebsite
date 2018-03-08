@@ -9,12 +9,14 @@ body {
     margin: 0;
 }
 
+
 /* /////////////////////////////////////////////////////////////// */
 /* Styling the top bar which will appear on every page */
 .navbar {
     background-color: #3f51b5;
     overflow: hidden;
     padding: 14px 2%;
+    position: inherit;
 
 }
 
@@ -133,6 +135,7 @@ body {
 /* Website contents */
 .websiteContents {
     padding: 2%;
+    position: inherit;
 }
 
 /* ///////////////////////////////////////////// */
@@ -350,9 +353,7 @@ hr {
 }
 
 /* Person of the day picture and text */
-.horiz{
-    padding: ;
-}
+
 .column {
     float: left;
     padding: 10px;
@@ -372,6 +373,12 @@ hr {
     border: 3px solid #3F51B5;
     border-radius: 50%;
     left: 0;
+}
+
+/* /////////////////////////////////////////////// */
+/* footer */
+.notsticky{
+    position: relative;
 }
 
 /* ////////////////////////////////////////////// */
@@ -569,13 +576,14 @@ hr {
 
 /* ABOUT PAGES */
 .about-navbar {
+    padding: 5pt 10pt;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
     margin-top: 30px;
-    width: 80%;
+    width: 60%;
     background-color: #003FFF;
-    border-radius: 100px;
+
     text-align: center;
     text-decoration: none;
     color: white;
@@ -593,11 +601,77 @@ hr {
 }
 
 #about-navbar-left {
-    padding-right: 33%;
+    padding-right: 30%;
 }
 
 #about-navbar-right {
-    padding-left: 33%;
+    padding-left: 30%;
+}
+.flag-turned-right {
+
+    position: relative;
+    /*left: 0;*/
+    height: 50px;
+    /*width: 280px;*/
+    -webkit-transition: width 1s;
+    transition: width 1s;
+}
+
+.flag-turned-right:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25px 10px 25px 0;
+    border-color: transparent #ffffff transparent transparent;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+}
+.flag-turned-right.menu {
+    /*width: 30px;*/
+    background-color: #303F9F;
+    -webkit-transition: width 1s;
+    transition: width 1s;
+    font-family: 'Bangers', cursive;
+    font-size: 17pt;
+}
+
+/*.flag.menu.bottom {*/
+    /*position: relative;*/
+    /*top: 60px;*/
+    /*margin-left: -13px;*/
+/*}*/
+
+.flag-turned-right.menu:hover {
+    width: 90%;
+}
+.flag-turned-left{
+    position: relative;
+    /*left: 0;*/
+    height: 50px;
+    /*width: 280px;*/
+    -webkit-transition: width 1s;
+    transition: width 1s;
+}
+.flag-turned-left:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25px 0 25px 10px;
+    border-color: transparent  transparent transparent #ffffff;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+.flag-turned-left.menu {
+    /*width: 30px;*/
+    background-color: #303F9F;
+    -webkit-transition: width 1s;
+    transition: width 1s;
 }
 
 #about-news-content-text, #about-idea-content-text {
@@ -679,9 +753,10 @@ hr {
     width: 100%;
     text-align: center;
     line-height: 3px;
-    position: fixed;
+    position: inherit;
     bottom: 0;
-    
+    margin-top: 9px;
+
 }
 
 /* ////////////////////////////////////////////// */
