@@ -136,6 +136,7 @@ body {
 .websiteContents {
     padding: 2%;
     position: inherit;
+    margin: 0 auto;
 }
 
 /* ///////////////////////////////////////////// */
@@ -746,6 +747,7 @@ hr {
     padding-left: 2%;
 }
 
+
 /* FOOTER THAT APPEARS ON EVERY PAGE*/
 .footer{
     margin-right: auto;
@@ -753,10 +755,13 @@ hr {
     width: 100%;
     text-align: center;
     line-height: 3px;
-    position: inherit;
+    position: relative;
     bottom: 0;
-    margin-top: 9px;
+    margin-top: 15px;
 
+}
+.footer.small{
+    position: absolute;
 }
 
 /* ////////////////////////////////////////////// */
