@@ -350,6 +350,9 @@ hr {
 }
 
 /* Person of the day picture and text */
+.horiz{
+    padding: ;
+}
 .column {
     float: left;
     padding: 10px;
@@ -357,11 +360,11 @@ hr {
 }
 
 .left {
-    width: 25%;
+    width: 18%;
 }
 
 .right {
-    width: 75%;
+    width: 82%;
 }
 
 .left img {
