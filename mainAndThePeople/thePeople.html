@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Bangers|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="js/search.js"></script>
 </head>
 <body>
 <header class="navbar">
@@ -28,8 +29,8 @@
 
     <div class="middleMenu">
         <div class="middleMenuSearch" action="action_page.php">
-            <button type="submit"><i class="fa fa-search"></i></button>
-            <input type="text" placeholder="Search.." name="search">
+            <button type="submit" onclick="search()" name="search"><i class="fa fa-search"></i></button>
+            <input id="search_text" type="text" onkeypress="enterCheck(Event)" placeholder="Search...">
         </div>
         <div class="middleMenuButtons">
             <div class="flagThing menu top">
@@ -47,42 +48,42 @@
         <div class="user">
             <img src="tile.png" alt="Avatar" class="userImage">
             <div class="overlay">
-                <div class="userInfo">Student</div>
+                <div class="userInfo">John Johnson</div>
                 <a class="contactLink" href="index.html">Contact</a>
             </div>
         </div>
         <div class="user two">
             <img src="tile.png" alt="Avatar" class="userImage">
             <div class="overlay">
-                <div class="userInfo">Teacher</div>
+                <div class="userInfo">Albert Einstein</div>
                 <a class="contactLink" href="index.html">Contact</a>
             </div>
         </div>
         <div class="user two">
             <img src="tile.png" alt="Avatar" class="userImage">
             <div class="overlay">
-                <div class="userInfo">Student</div>
+                <div class="userInfo">Dem Paulson</div>
                 <a class="contactLink" href="index.html">Contact</a>
             </div>
         </div>
         <div class="user two">
             <img src="tile.png" alt="Avatar" class="userImage">
             <div class="overlay">
-                <div class="userInfo">Teacher</div>
+                <div class="userInfo">Small man</div>
                 <a class="contactLink" href="index.html">Contact</a>
             </div>
         </div>
         <div class="user two">
             <img src="tile.png" alt="Avatar" class="userImage">
             <div class="overlay">
-                <div class="userInfo">Student</div>
+                <div class="userInfo">Big woman</div>
                 <a class="contactLink" href="index.html">Contact</a>
             </div>
         </div>
         <div class="user two">
             <img src="tile.png" alt="Avatar" class="userImage">
             <div class="overlay">
-                <div class="userInfo">Teacher</div>
+                <div class="userInfo">Pat Pattern</div>
                 <a class="contactLink" href="index.html">Contact</a>
             </div>
         </div>
