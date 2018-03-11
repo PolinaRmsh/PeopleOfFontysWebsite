@@ -18,9 +18,10 @@ function search() {
     }
 }
 
-//get me to work
-function enterCheck(e){
-    if (e.keyCode == 13 || e.which == 13){
-        console.log("lol");
-    }
-}
+$(document).ready(function(){
+    $("#search_text").keypress(function(e){
+        if (e.which == 13){
+            search();
+        }
+    });
+});

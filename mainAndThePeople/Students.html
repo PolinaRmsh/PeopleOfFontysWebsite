@@ -9,6 +9,7 @@
     <script type="text/javascript" src="js/main.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript" src="js/search.js"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
 </head>
 <body>
 <header class="navbar">
@@ -31,8 +32,8 @@
 
     <div class="middleMenu">
         <div class="middleMenuSearch" action="action_page.php">
-            <button type="submit"><i class="fa fa-search"></i></button>
-            <input type="text" placeholder="Search.." name="search">
+            <button type="submit" onclick="search()" name="search"><i class="fa fa-search"></i></button>
+            <input id="search_text" type="text" placeholder="Search...">
         </div>
         <div class="middleMenuButtons">
             <div class="flagThing menu top">
