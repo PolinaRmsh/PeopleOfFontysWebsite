@@ -3,33 +3,36 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Bangers|Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script type="text/javascript" src="js/main.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>The Fontys People</title>
 </head>
 <body>
-<header class="navbar">
-    <div class="header-left">
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-bg-blue justify-content-between">
         <a class="logoImage" href="index.html">
             <img src="group(4).png" alt="Company logo">
         </a>
         <a class="logoBtn" href="index.html">The Fontys People </a>
-    </div>
-    <div class="header-right" id="headerRight">
-        <a href="javascript:void(0);" class="smallMenuIcon" onclick="turnNavbarLinksIntoIcon()">&#9776;</a>
-        <a class="active" href="index.html">Home</a>
-        <a href="thePeople.html">The People</a>
-        <a href="mypage.html">My Page</a>
-        <a href="about_news.html">About</a>
-    </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <div class="navbar-nav navbar-right ml-auto">
+                <a class="nav-item active" href="index.html">Home</a>
+                <a class="nav-item" href="thePeople.html">The People</a>
+                <a class="nav-item" href="mypage.html">My Page</a>
+                <a class="nav-item" href="about_news.html">About</a>
+            </div>
+        </div>
+    </nav>
 </header>
 <div class="websiteContents">
     <div class="slideshow-container">
 
-        <div class="mySlides fade">
+        <div class="mySlides fade-in">
             <div class="numbertext">1 / 3</div>
             <img src="one.jpg" alt="an image">
             <div class="caption">
@@ -38,7 +41,7 @@
             </div>
         </div>
 
-        <div class="mySlides fade">
+        <div class="mySlides fade-in">
             <div class="numbertext">2 / 3</div>
             <img src="two.jpg" alt="an image">
             <div class="caption">
@@ -46,7 +49,7 @@
             </div>
         </div>
 
-        <div class="mySlides fade">
+        <div class="mySlides fade-in">
             <div class="numbertext">3 / 3</div>
             <img src="three.jpg" alt="an image">
             <div class="caption">Caption Three</div>
@@ -91,7 +94,7 @@
     <p>2018, Polina Rymshina, M. Voicu</p>
 </footer>
 
-<script src="js/main.js"></script>
+
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -101,5 +104,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

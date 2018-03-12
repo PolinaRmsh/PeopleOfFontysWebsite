@@ -1,17 +1,9 @@
- function turnNavbarLinksIntoIcon() {
-        var x = document.getElementById("headerRight");
-        if (x.className === "header-right") {
-            x.className += " responsiveHeader";
-        } else {
-            x.className = "header-right";
-        }
-    }
-
-
-
+$(document).ready(function () {
+    showSlides(slideIndex);
+});
 
 var slideIndex = 1;
-showSlides(slideIndex);
+// showSlides(slideIndex);
 
 // Next/previous controls
 function plusSlides(n) {

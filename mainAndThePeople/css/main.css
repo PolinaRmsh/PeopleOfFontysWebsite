@@ -11,22 +11,24 @@ body {
 
 /* /////////////////////////////////////////////////////////////// */
 /* Styling the top bar which will appear on every page */
-.navbar {
-    background-color: #3f51b5;
-    overflow: hidden;
-    padding: 14px 2%;
-    position: inherit;
+/*.navbar {*/
+    /*background-color: #3f51b5;*/
+    /*overflow: hidden;*/
+    /*padding: 14px 2%;*/
+    /*position: inherit;*/
 
+/*}*/
+.navbar-bg-blue{
+    background-color: #3f51b5;
 }
 
 /* Put the links to other sections to the right of the navbar */
-.navbar .header-right {
-    float: right;
-    text-align: center;
+.navbar-right{
+    position: relative !important;
+    right: 0;
 }
-
 /* Style the links inside the navigation bar */
-.navbar .header-right a {
+.navbar-right a {
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
@@ -37,26 +39,24 @@ body {
 }
 
 /* Line under the links on hover */
-.navbar .header-right a:hover {
+.navbar-right a:hover {
     border-bottom: 3px solid rgba(197, 202, 233, 0.8);
+    color: white;
+    text-decoration: none;
 }
 
 /* Styling the active tab */
-.navbar .header-right .active {
+.navbar-right a.active{
+    background-color: inherit;
+}
+.navbar-right a.active {
     background-color: inherit;
     border-bottom: 3px solid #FF5722;
-
-}
-
-/* NOT WORKING         On small screens the menu will be hidden in an icon*/
-.navbar .header-right .smallMenuIcon {
-    display: none;
-    float: left;
 }
 
 /* Styling the logo on the left and the website name */
 /* Logo */
-.navbar .header-left .logoImage img {
+.logoImage img {
     float: left;
     width: 28.5pt;
     height: 28.5pt;
@@ -69,7 +69,7 @@ body {
 }
 
 /* Name */
-.navbar .header-left .logoBtn {
+.logoBtn {
     float: left;
     border: none;
     text-align: center;
@@ -80,8 +80,11 @@ body {
     cursor: pointer;
     display: inline-block;
     text-decoration: none;
-    position: absolute;
     top: 3px;
+}
+.logoBtn:hover{
+    color: white;
+    text-decoration: none;
 }
 
 ::-moz-selection {
@@ -96,40 +99,6 @@ body {
 
 /* /////////////////////////////////////////////////// */
 
-/* /////////////////////////////////////////////////// */
-/* responsive header */
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home").
-Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
-    .navbar .header-right a {
-        display: none;
-    }
-
-    .navbar .header-right a.smallMenuIcon {
-        float: right;
-        display: block;
-    }
-}
-
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon.
-This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
-    .header-right.responsiveHeader {
-        position: inherit;
-    }
-
-    .header-right.responsiveHeader .smallMenuIcon {
-        position: relative;
-        right: 0;
-        top: 0;
-    }
-
-    .header-right.responsiveHeader a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-}
 
 /* ///////////////////////////////////////////// */
 
@@ -268,7 +237,7 @@ This class makes the topnav look good on small screens (display the links vertic
 }
 
 /* Fading animation */
-.fade {
+.fade-in {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
