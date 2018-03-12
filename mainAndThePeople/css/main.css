@@ -332,18 +332,20 @@ hr {
 }
 
 .left {
-    width: 18%;
 }
 
-.right {
-    width: 82%;
-}
+
 
 .left img {
     width: 200px;
     border: 3px solid #3F51B5;
     border-radius: 50%;
     left: 0;
+}
+.display-5{
+    font-size:1.5rem;
+    font-weight:300;
+    line-height:1.2;
 }
 
 /* /////////////////////////////////////////////// */
@@ -738,11 +740,12 @@ hr {
     position: relative;
     bottom: 0;
     margin-top: 15px;
-
+    color: white;
 }
 
 .footer.small {
     position: absolute;
+    font-size: inherit;
 }
 
 /* ////////////////////////////////////////////// */
