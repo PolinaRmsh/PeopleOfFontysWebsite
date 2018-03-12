@@ -20,7 +20,7 @@ function search() {
 
 $(document).ready(function(){
     $("#search_text").keypress(function(e){
-        if (e.which == 13){
+        if (e.which === 13){
             search();
         }
     });

@@ -9,7 +9,6 @@ body {
     margin: 0;
 }
 
-
 /* /////////////////////////////////////////////////////////////// */
 /* Styling the top bar which will appear on every page */
 .navbar {
@@ -98,7 +97,7 @@ body {
 /* /////////////////////////////////////////////////// */
 
 /* /////////////////////////////////////////////////// */
-/* RESPONSIVE DESIGN NOT WORKING */
+/* responsive header */
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home").
 Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
@@ -380,7 +379,7 @@ hr {
 
 /* /////////////////////////////////////////////// */
 /* footer */
-.notsticky{
+.notsticky {
     position: relative;
 }
 
@@ -405,7 +404,7 @@ hr {
 }
 
 /* Student page */
-.middleMenuButtons.on{
+.middleMenuButtons.on {
 
 }
 
@@ -610,6 +609,7 @@ hr {
 #about-navbar-right {
     padding-left: 30%;
 }
+
 .flag-turned-right {
 
     position: relative;
@@ -632,6 +632,7 @@ hr {
     top: 0;
 
 }
+
 .flag-turned-right.menu {
     /*width: 30px;*/
     background-color: #303F9F;
@@ -642,15 +643,16 @@ hr {
 }
 
 /*.flag.menu.bottom {*/
-    /*position: relative;*/
-    /*top: 60px;*/
-    /*margin-left: -13px;*/
+/*position: relative;*/
+/*top: 60px;*/
+/*margin-left: -13px;*/
 /*}*/
 
 .flag-turned-right.menu:hover {
     width: 90%;
 }
-.flag-turned-left{
+
+.flag-turned-left {
     position: relative;
     /*left: 0;*/
     height: 50px;
@@ -658,18 +660,20 @@ hr {
     -webkit-transition: width 1s;
     transition: width 1s;
 }
+
 .flag-turned-left:before {
     content: '';
     width: 0;
     height: 0;
     border-style: solid;
     border-width: 25px 0 25px 10px;
-    border-color: transparent  transparent transparent #ffffff;
+    border-color: transparent transparent transparent #ffffff;
     position: absolute;
     left: 0;
     top: 0;
 
 }
+
 .flag-turned-left.menu {
     /*width: 30px;*/
     background-color: #303F9F;
@@ -698,6 +702,12 @@ hr {
 }
 
 /*MY PAGE*/
+.container {
+    padding: 2%;
+    display: block;
+    overflow: auto;
+}
+
 .mypage-top-info {
     display: inline-flex;
     width: 70%;
@@ -749,9 +759,8 @@ hr {
     padding-left: 2%;
 }
 
-
 /* FOOTER THAT APPEARS ON EVERY PAGE*/
-.footer{
+.footer {
     margin-right: auto;
     margin-left: auto;
     width: 100%;
@@ -762,7 +771,8 @@ hr {
     margin-top: 15px;
 
 }
-.footer.small{
+
+.footer.small {
     position: absolute;
 }
 
