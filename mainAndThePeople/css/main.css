@@ -555,6 +555,8 @@ hr {
 .contactLink:hover {
     /*border-bottom: 3px solid #3F51B5;*/
     border-bottom: 3px solid rgba(197, 202, 233, 0.8);
+    color: white;
+    text-decoration: none;
 }
 
 /* ABOUT PAGES */
@@ -683,27 +685,13 @@ hr {
 }
 
 /*MY PAGE*/
-.container {
-    padding: 2%;
-    display: block;
-    overflow: auto;
-}
-
-.mypage-top-info {
-    display: inline-flex;
-    width: 70%;
-}
 
 .mypage-top-text {
     display: block;
     float: right;
 }
 
-.mypage-top-picture {
-    display: inherit;
-    width: 128px;
-    margin: 2%;
-}
+
 
 #contact-info {
     display: inline;
@@ -716,15 +704,10 @@ hr {
 }
 
 #person-name {
-    color: #03F;
-    font-size: 20px;
+    color: #303F9F;
     font-weight: bold;
 }
 
-#person-status {
-    position: relative;
-    bottom: 20px;
-}
 
 #top-info-separator {
     border-bottom: 1px black solid;
