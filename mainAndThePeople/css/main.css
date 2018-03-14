@@ -780,3 +780,14 @@ svg,
 video {
     vertical-align: middle;
 }
+
+/*SIGNUP PAGE*/
+.signup-form{
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+/*LOGIN PAGE*/
+.form-login{
+    max-width: 330px;
+}
