@@ -294,6 +294,9 @@ hr {
     font-size: 30px;
     position: relative;
 }
+.button3:hover{
+    color: white;
+}
 
 .flagThing {
     background-color: #FF5722;
@@ -329,12 +332,6 @@ hr {
     padding: 10px;
     padding-left: 0;
 }
-
-.left {
-}
-
-
-
 .left img {
     width: 15rem;
     height: 15rem;
@@ -348,6 +345,17 @@ hr {
     font-weight:300;
     line-height:1.2;
     margin-bottom: 1rem;
+}
+.person-circle img{
+    width: 10rem;
+    height: 10rem;
+    border: 3px solid #3F51B5;
+    border-radius: 50%;
+    left: 0;
+    object-fit: cover;
+}
+.also-color{
+    color: #FF5722;
 }
 
 /* /////////////////////////////////////////////// */
