@@ -1,3 +1,4 @@
+// MAIN PAGE IMAGE CAROUSEL
 $(document).ready(function () {
     showSlides(slideIndex);
 });
@@ -29,4 +30,14 @@ function showSlides(n) {
     }
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
+}
+
+// ABOUT PAGE - OONTACT US - MAP
+function myMap() {
+    var mapCanvas = document.getElementById("map");
+    var mapOptions = {
+        center: new google.maps.LatLng(51.452251, 5.481973),
+        zoom: 16
+    };
+    var map = new google.maps.Map(mapCanvas, mapOptions);
 }
