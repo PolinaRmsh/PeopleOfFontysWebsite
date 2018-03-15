@@ -34,13 +34,14 @@
             <div class="form-row">
                 <div class="form-group col-5">
                     <label for="inputEmail">Email</label>
-                    <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group col-5">
                     <label for="inputPassword">Password</label>
-                    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Password" minlength="6" required>
+                    <p id="demo" class="d-inline"></p>
                 </div>
             </div>
             <div class="form-row">
@@ -72,7 +73,7 @@
                     </select>
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary" style="background-color: #3f51b5">Sign up</button>
+            <button type="submit" onclick="validatePassw(event)" id="signUpBtn" class="btn btn-primary" style="background-color: #3f51b5">Sign up</button>
         </form>
     </div>
 </div>

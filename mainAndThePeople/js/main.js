@@ -42,45 +42,16 @@ function myMap() {
     var map = new google.maps.Map(mapCanvas, mapOptions);
 }
 
-// THE PEOPLE ONCLICK MODAL BOXES
-// Get the modal
-var modal = document.getElementById('myModal');
 
-// Get the button that opens the modal
-var butn = document.getElementsByClassName("myBtn")[0];
+// SIGNUP PAGE INFO VALIDATION
+//password minlength
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close-modal-popup")[0];
-
-// When the user clicks on the button, open the modal
-butn.onclick = function() {
-    modal.style.display = "block";
-};
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-};
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target === modal) {
-        modal.style.display = "none";
+    function validatePassw(e) {
+            var msgwords = document.getElementById('inputPassword')[0].value.length;
+            if (msgwords < 6) {
+                e.preventDefault();
+                alert("Your password is too short.");
+            }
     }
-}
 
-// MAIN PAGE SEE MORE ONCLICK COLLAPSIBLE
-var coll = document.getElementsByClassName("collapsible");
-var i;
 
-for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.display === "block") {
-            content.style.display = "none";
-        } else {
-            content.style.display = "block";
-        }
-    });
-}
