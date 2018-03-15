@@ -42,18 +42,15 @@ function myMap() {
     var map = new google.maps.Map(mapCanvas, mapOptions);
 }
 
-// SIGNUP PAGE INFO VALIDATION
-//password minlength
-
-    function validatePassw(e) {
-            var msgwords = document.getElementById('inputPassword')[0].value.length;
-            if (msgwords < 6) {
-                e.preventDefault();
-                alert("Your password is too short.");
-            }
-    }
 var coll = document.getElementsByClassName("person-circle");
 
 for (var i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
         var content = this.children[1];
         if (content.style.display == "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    });
+}
