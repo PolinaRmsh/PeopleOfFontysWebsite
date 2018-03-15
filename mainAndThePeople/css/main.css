@@ -381,6 +381,13 @@ hr {
     position: relative;
 }
 
+
+/*COLLAPSIBLES FOR THE INDEX PAGE*/
+.collapsible-content{
+    display: none;
+    background-color: red;
+}
+
 /* /////////////////////////////////////////////// */
 /* footer */
 .notsticky {
@@ -857,4 +864,9 @@ video {
 /*LOGIN PAGE*/
 .form-login{
     max-width: 330px;
+}
+
+.passwordErrors{
+    color: red;
+    display: none;
 }

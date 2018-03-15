@@ -3,6 +3,7 @@ $(document).ready(function () {
     showSlides(slideIndex);
 });
 
+
 var slideIndex = 1;
 // showSlides(slideIndex);
 
@@ -31,7 +32,6 @@ function showSlides(n) {
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
 }
-
 // ABOUT PAGE - OONTACT US - MAP
 function myMap() {
     var mapCanvas = document.getElementById("map");
@@ -41,16 +41,15 @@ function myMap() {
     };
     var map = new google.maps.Map(mapCanvas, mapOptions);
 }
-
 // THE PEOPLE ONCLICK MODAL BOXES
 // Get the modal
 var modal = document.getElementById('myModal');
 
 // Get the button that opens the modal
-var butn = document.getElementsByClassName("myBtn")[0];
+var butn = document.getElementsByClassName("myBtn");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close-modal-popup")[0];
+var span = document.getElementsByClassName("close-modal-popup");
 
 // When the user clicks on the button, open the modal
 butn.onclick = function() {
@@ -68,16 +67,13 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
-
 // MAIN PAGE SEE MORE ONCLICK COLLAPSIBLE
-var coll = document.getElementsByClassName("collapsible");
-var i;
+var coll = document.getElementsByClassName("person-circle");
 
-for (i = 0; i < coll.length; i++) {
+for (var i = 0; i < coll.length; i++) {
     coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.display === "block") {
+        var content = this.children[1];
+        if (content.style.display == "block") {
             content.style.display = "none";
         } else {
             content.style.display = "block";
