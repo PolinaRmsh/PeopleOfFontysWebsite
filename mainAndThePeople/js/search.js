@@ -25,3 +25,11 @@ $(document).ready(function(){
         }
     });
 });
+
+
+
+//SIGNUP PAGE
+function validateSignup(){
+    console.log("hello");
+}
+var test = document.getElementById("inputEmail");
