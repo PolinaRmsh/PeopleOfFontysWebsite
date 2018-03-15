@@ -357,6 +357,29 @@ hr {
 .also-color{
     color: #FF5722;
 }
+.button-circle{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    position: relative;
+}
 
 /* /////////////////////////////////////////////// */
 /* footer */
@@ -549,6 +572,8 @@ hr {
     text-decoration: none;
     color: white;
     margin-right: 10px;
+    background-color: transparent;
+    border: none;
 
 }
 

@@ -47,13 +47,13 @@ function myMap() {
 var modal = document.getElementById('myModal');
 
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+var butn = document.getElementsByClassName("myBtn")[0];
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close-modal-popup")[0];
 
 // When the user clicks on the button, open the modal
-btn.onclick = function() {
+butn.onclick = function() {
     modal.style.display = "block";
 };
 
@@ -63,8 +63,24 @@ span.onclick = function() {
 };
 
 // When the user clicks anywhere outside of the modal, close it
-// window.onclick = function(event) {
-//     if (event.target === modal) {
-//         modal.style.display = "none";
-//     }
-// }
+window.onclick = function(event) {
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+}
+
+// MAIN PAGE SEE MORE ONCLICK COLLAPSIBLE
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    });
+}
