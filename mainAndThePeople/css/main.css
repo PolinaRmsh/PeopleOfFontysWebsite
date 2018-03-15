@@ -363,7 +363,7 @@ hr {
     border-radius: 50%;
 }
 .collapsible {
-    background-color: #eee;
+    background-color: transparent;
     color: #444;
     cursor: pointer;
     width: 100%;
