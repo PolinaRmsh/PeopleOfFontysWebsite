@@ -26,10 +26,16 @@ $(document).ready(function(){
     });
 });
 
-
-
 //SIGNUP PAGE
 function validateSignup(){
-    console.log("hello");
+
+    var inputs = [
+        document.getElementById("inputEmail").value,
+        document.getElementById("inputPassword").value,
+        document.getElementById("inputGender").value
+    ];
+    if (inputs[2] == "Choose..."){
+        document.getElementById("genderNoChoiceError").style.display = "block";
+        return false;
+    }
 }
-var test = document.getElementById("inputEmail");

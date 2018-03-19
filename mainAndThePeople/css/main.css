@@ -866,7 +866,7 @@ video {
     max-width: 330px;
 }
 
-.passwordErrors{
+.input-errors span{
     color: red;
     display: none;
 }
