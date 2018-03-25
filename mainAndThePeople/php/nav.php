@@ -9,5 +9,5 @@
 if (isset($_GET['page'])) {
     include "../htmlPages/" . $_GET['page'] . ".html";
 } else {
-    include "404.html";
+    include "404.php";
 }

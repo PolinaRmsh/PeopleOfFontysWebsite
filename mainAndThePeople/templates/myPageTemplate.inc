@@ -3,7 +3,7 @@
     <div class="row">
         <div class="col-sm-2">
             <div class="person-circle text-center justify-content-md-center">
-                <img src="img/iron-man.jpg">
+                <img src="../img/iron-man.jpg" alt="Person photo">
             </div>
         </div>
         <div class="col-sm-8">

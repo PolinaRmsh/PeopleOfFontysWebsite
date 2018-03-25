@@ -4,19 +4,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Bangers|Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
     <title>My Page</title>
 </head>
 <body>
 <!--HEADER-->
-<?php $page = 'mypage.php'; require('headerTemplate.inc'); ?>
+<?php $page = 'mypage.php'; require('../templates/headerTemplate.inc'); ?>
 <!--BODY-->
-<?php require ('myPageTemplate.inc'); ?>
+<?php require('../templates/myPageTemplate.inc'); ?>
 <!--FOOTER-->
-<?php require('footerTemplate.inc'); ?>
+<?php require('../templates/footerTemplate.inc'); ?>
 
-<script src="js/main.js"></script>
+<script src="../js/main.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>

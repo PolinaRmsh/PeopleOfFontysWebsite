@@ -17,44 +17,44 @@
 <h1 class="pb-3"></h1>
 <div class="pics">
     <div class="user">
-        <img src="tile.png" alt="Avatar" class="userImage">
+        <img src="../tile.png" alt="Avatar" class="userImage">
         <div class="overlay">
-            <div class="userInfo">John Smith</div>
+            <div class="userInfo">Emin Thaqi</div>
             <a class="contactLink" href="index.php">Contact</a>
         </div>
     </div>
     <div class="user two">
-        <img src="tile.png" alt="Avatar" class="userImage">
+        <img src="../tile.png" alt="Avatar" class="userImage">
         <div class="overlay">
-            <div class="userInfo">Mary Smith</div>
+            <div class="userInfo">Roxana Paval</div>
             <a class="contactLink" href="index.php">Contact</a>
         </div>
     </div>
     <div class="user two">
-        <img src="tile.png" alt="Avatar" class="userImage">
+        <img src="../tile.png" alt="Avatar" class="userImage">
         <div class="overlay">
-            <div class="userInfo">Polina Rymshina</div>
+            <div class="userInfo">Ahmet Oztan</div>
             <a class="contactLink" href="index.php">Contact</a>
         </div>
     </div>
     <div class="user two">
-        <img src="tile.png" alt="Avatar" class="userImage">
+        <img src="../tile.png" alt="Avatar" class="userImage">
         <div class="overlay">
-            <div class="userInfo">Matei Voicu</div>
+            <div class="userInfo">Roopali Gupta</div>
             <a class="contactLink" href="index.php">Contact</a>
         </div>
     </div>
     <div class="user two">
-        <img src="tile.png" alt="Avatar" class="userImage">
+        <img src="../tile.png" alt="Avatar" class="userImage">
         <div class="overlay">
-            <div class="userInfo">Sally Doe</div>
+            <div class="userInfo">Vladimir Kabzar</div>
             <a class="contactLink" href="index.php">Contact</a>
         </div>
     </div>
     <div class="user two">
-        <img src="tile.png" alt="Avatar" class="userImage">
+        <img src="../tile.png" alt="Avatar" class="userImage">
         <div class="overlay">
-            <div class="userInfo">Cookie Monster</div>
+            <div class="userInfo">Marian Jager</div>
             <a class="contactLink" href="index.php">Contact</a>
         </div>
     </div>

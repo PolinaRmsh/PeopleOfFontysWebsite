@@ -1,15 +1,15 @@
 <?php
 if ($_GET["target"] == "home"){
-    $people = file_get_contents('./peoplePHP.html', true);
+    $people = file_get_contents('./peoplePHP.php', true);
 }
 elseif ($_GET["target"] == "student"){
-    $people = file_get_contents('./studentsPHP.html', true);
+    $people = file_get_contents('./studentsPHP.php', true);
 }
 elseif ($_GET["target"] == "teacher"){
-    $people = file_get_contents('./teachersPHP.html', true);
+    $people = file_get_contents('./teachersPHP.php', true);
 }
 else {
-    $people = file_get_contents('./peoplePHP.html', true);
+    $people = file_get_contents('./peoplePHP.php', true);
 }
 ?>
 <html lang="en">
@@ -18,15 +18,15 @@ else {
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Bangers|Roboto" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href="../css/main.css" rel="stylesheet">
     <title>The People</title>
 </head>
 <body>
 <header>
     <nav class="navbar navbar-expand-lg navbar-light navbar-bg-blue justify-content-between">
         <a class="logoImage" href="index.php">
-            <img src="img/group(4).png" alt="Company logo">
+            <img src="../img/group(4).png" alt="Company logo">
         </a>
         <a class="logoBtn" href="index.php">The Fontys People </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
@@ -38,7 +38,7 @@ else {
                 <a class="nav-item" href="index.php">Home</a>
                 <a class="nav-item active" href="thePeople.php?target=home">The People</a>
                 <a class="nav-item" href="mypage.php">My Page</a>
-                <a class="nav-item" href="about_news.html">About</a>
+                <a class="nav-item" href="about_news.php">About</a>
             </div>
         </div>
     </nav>
@@ -62,8 +62,8 @@ echo $people;
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-<script src="js/thePeople.js"></script>
-<script src="js/plugins.js"></script>
-<script src="js/search.js"></script>
+<script src="../js/thePeople.js"></script>
+<script src="../js/plugins.js"></script>
+<script src="../js/search.js"></script>
 </body>
 </html>
