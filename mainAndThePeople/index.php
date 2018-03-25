@@ -9,26 +9,8 @@
     <title>The Fontys People</title>
 </head>
 <body>
-<header>
-    <nav class="navbar navbar-expand-lg navbar-light navbar-bg-blue justify-content-between">
-        <a class="logoImage" href="index.html">
-            <img src="img/group(4).png" alt="Company logo">
-        </a>
-        <a class="logoBtn" href="index.html">The Fontys People </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-            <div class="navbar-nav navbar-right ml-auto">
-                <a class="nav-item active" href="index.html">Home</a>
-                <a class="nav-item" href="thePeople.php?target=home">The People</a>
-                <a class="nav-item" href="mypage.html">My Page</a>
-                <a class="nav-item" href="about_news.html">About</a>
-            </div>
-        </div>
-    </nav>
-</header>
+<!--HEADER-->
+<?php $page = 'index.php'; require('headerTemplate.inc'); ?>
 <div class="websiteContents">
     <div class="slideshow-container">
 
@@ -107,9 +89,8 @@
     </div>
 </div>
 
-<footer class="navbar footer navbar-expand-lg navbar-light navbar-bg-blue justify-content-between">
-    <div class="navbar-text text-white">Copyright © 2018, Polina Rymshina, Matei Voicu</div>
-</footer>
+<!--FOOTER-->
+<?php require('footerTemplate.inc'); ?>
 
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
