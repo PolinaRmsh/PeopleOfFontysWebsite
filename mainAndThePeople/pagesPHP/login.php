@@ -3,27 +3,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Bangers|Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
     <title>The Fontys People</title>
     </head>
 <body class="text-center">
     <header>
         <nav class="navbar navbar-expand-lg navbar-light navbar-bg-blue justify-content-between">
-            <a class="logoImage" href="pagesPHP/index.php">
-                <img src="img/group(4).png" alt="Company logo">
+            <a class="logoImage" href="../pagesPHP/index.php">
+                <img src="../img/group(4).png" alt="Company logo">
             </a>
-            <a class="logoBtn" href="pagesPHP/index.php">The Fontys People </a>
+            <a class="logoBtn" href="../pagesPHP/index.php">The Fontys People </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
                     aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
                 <div class="navbar-nav navbar-right ml-auto">
-                    <a class="nav-item" href="pagesPHP/index.php">Home</a>
-                    <a class="nav-item" href="pagesPHP/thePeople.php?target=home">The People</a>
-                    <a class="nav-item active" href="pagesPHP/mypage.php">My Page</a>
-                    <a class="nav-item" href="pagesPHP/about_news.php">About</a>
+                    <a class="nav-item" href="../pagesPHP/index.php">Home</a>
+                    <a class="nav-item" href="../pagesPHP/thePeople.php?target=home">The People</a>
+                    <a class="nav-item active" href="../pagesPHP/mypage.php">My Page</a>
+                    <a class="nav-item" href="../pagesPHP/about_news.php">About</a>
                 </div>
             </div>
         </nav>

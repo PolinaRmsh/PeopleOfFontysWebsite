@@ -1,3 +1,14 @@
+<?php
+    if (isset($_COOKIE["userid"])){
+        if ($_COOKIE["userid"] === "admin"){
+            $content = file_get_contents("../templates/myPageTemplate.inc", true);
+        }
+    }
+    else{
+        $content = file_get_contents("../templates/loginTemplate.inc", true);
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +23,7 @@
 <!--HEADER-->
 <?php $page = 'mypage.php'; require('../templates/headerTemplate.inc'); ?>
 <!--BODY-->
-<?php require('../templates/myPageTemplate.inc'); ?>
+<?php echo $content; ?>
 <!--FOOTER-->
 <?php require('../templates/footerTemplate.inc'); ?>
 
@@ -26,5 +37,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+<script src="../js/main.js"></script>
 </body>
 </html>
