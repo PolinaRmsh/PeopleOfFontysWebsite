@@ -9,26 +9,7 @@
     <title>News</title>
 </head>
 <body>
-<header>
-    <nav class="navbar navbar-expand-lg navbar-light navbar-bg-blue justify-content-between">
-        <a class="logoImage" href="index.php">
-            <img src="../img/group(4).png" alt="Company logo">
-        </a>
-        <a class="logoBtn" href="index.php">The Fontys People </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-            <div class="navbar-nav navbar-right ml-auto">
-                <a class="nav-item" href="index.php">Home</a>
-                <a class="nav-item" href="thePeople.php?target=home">The People</a>
-                <a class="nav-item" href="mypage.php">My Page</a>
-                <a class="nav-item active" href="about_news.php">About</a>
-            </div>
-        </div>
-    </nav>
-</header>
+<?php $page = 'aboutnews.php'; require('../templates/headerTemplate.inc'); ?>
 <h1></h1>
 <div class="about-navbar flag-turned-right flag-turned-left menu">
     <a id="about-navbar-left" class="active" href="about_news.php">News</a>
@@ -96,9 +77,7 @@
         </figure>
     </div>
 </div>
-<footer class="navbar footer navbar-expand-lg navbar-light navbar-bg-blue justify-content-between">
-    <div class="navbar-text text-white">Copyright © 2018, Polina Rymshina, Matei Voicu</div>
-</footer>
+<?php require('../templates/footerTemplate.inc'); ?>
 
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

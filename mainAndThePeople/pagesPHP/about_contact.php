@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,26 +9,8 @@
     <title>Contact Us</title>
 </head>
 <body>
-<header>
-    <nav class="navbar navbar-expand-lg navbar-light navbar-bg-blue justify-content-between">
-        <a class="logoImage" href="index.php">
-            <img src="../img/group(4).png" alt="Company logo">
-        </a>
-        <a class="logoBtn" href="index.php">The Fontys People </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-            <div class="navbar-nav navbar-right ml-auto">
-                <a class="nav-item" href="index.php">Home</a>
-                <a class="nav-item" href="thePeople.php?target=home">The People</a>
-                <a class="nav-item" href="mypage.php">My Page</a>
-                <a class="nav-item active" href="about_news.php">About</a>
-            </div>
-        </div>
-    </nav>
-</header>
+<?php $page = 'aboutcontact.php';
+require('../templates/headerTemplate.inc'); ?>
 <h1></h1>
 <div class="about-navbar flag-turned-right flag-turned-left menu">
     <a id="about-navbar-left" href="about_news.php">News</a>
@@ -36,35 +18,65 @@
     <a id="about-navbar-right" class="active" href="about_contact.php">Contact Us</a>
 </div>
 <div class="websiteContents">
-    <div class="row">
-        <div class="col-sm">
-            <div class="text-center">
-                <div class="display-5">We would enjoy to meet with anyone having ideas about our product!</div>
-                <div>We are located at: Fontys UAS, Rachelsmolen 1, Eindhoven, The Netherlands</div>
-                <div class="mb-3"></div>
-                <div class="display-5">You can contact us using the following email addresses:</div>
-                <div>
-                    <a href="mailto:m.voicu@student.fontys.nl">Matei Voicu: m.voicu@student.fontys.nl</a>
+    <div class="text-center">
+        <div class="display-5">We would enjoy to meet with anyone having ideas about our product!</div>
+        <div>We are located at: Fontys UAS, Rachelsmolen 1, Eindhoven, The Netherlands</div>
+        <div class="mb-3"></div>
+        <div id="map"></div>
+    </div>
+    <div class="mb-3"></div>
+    <div class="text-center form-size">
+        <div class="display-5">You can also write us a letter!</div>
+        <form role="form" action="../model/mail.php" method="post">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputName">Name</label>
+                    <input type="text" class="form-control" id="inputName" name="inputName"
+                           placeholder="Name" value="<?php if (isset($_POST['inputName'])) {
+                        echo htmlspecialchars($_POST['inputName']);
+                    } ?>">
+                    <?php if (isset($errName)) {
+                        echo "<p class='text-danger'>$errName</p>";
+                    } ?>
                 </div>
-                <div>
-                    <a href="mailto:p.rymshina@student.fontys.nl">Polina Rymshina: p.rymshina@student.fontys.nl</a>
+                <div class="form-group col-md-6">
+                    <label for="inputEmail">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" name="inputEmail"
+                           placeholder="Email" value="<?php if (isset($_POST['inputEmail'])) {
+                        echo htmlspecialchars($_POST['inputEmail']);
+                    } ?>" required>
+                    <?php if (isset($errEmail)) {
+                        echo "<p class='text-danger'>$errEmail</p>";
+                    } ?>
                 </div>
             </div>
-        </div>
-        <div class="col-sm">
-            <div id="map"></div>
-        </div>
+            <div class="form-group">
+                <label for="inputSubject">Subject</label>
+                <input type="text" class="form-control" id="inputSubject" name="inputSubject"
+                       placeholder="Website idea">
+            </div>
+            <div class="form-group">
+                <label for="inputMessage">Your message</label>
+                <textarea class="form-control" rows="3" id="inputMessage" name="inputMessage"
+                          placeholder="Hi, can you add this and this to the website?"
+                          required><?php if (isset($_POST['inputMessage'])) {
+                        echo htmlspecialchars($_POST['inputMessage']);
+                    } ?></textarea>
+            </div>
+            <input id="btnSubmit" type="submit" name="btnSubmit" value="Send"
+                   class="btn btn-primary contactbtn-color">
+            <div class="form-group">
+                <?php if (isset($result)) {
+                    echo $result;
+                } ?>
+            </div>
+        </form>
     </div>
-
 </div>
-<footer class="navbar navbar-expand-lg footer small navbar-light navbar-bg-blue justify-content-between">
-    <div class="navbar-text text-white">Copyright © 2018, Polina Rymshina, Matei Voicu</div>
-</footer>
+<?php require('../templates/footerTemplate.inc'); ?>
 
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>

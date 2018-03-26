@@ -16,7 +16,8 @@
                 <?php echo ($page == 'thepeople.php' || $page == 'students.php' || $page == 'teachers.php') ? "active" : ""; ?>"
                    href="thePeople.php?target=home">The People</a>
                 <a class="nav-item <?php echo ($page == 'mypage.php') ? "active" : ""; ?>" href="mypage.php">My Page</a>
-                <a class="nav-item" href="about_news.php">About</a>
+                <a class="nav-item <?php echo ($page == 'aboutnews.php' || $page=='aboutidea.php'||$page=='aboutcontact.php') ? "active" : ""; ?>"
+                   href="about_news.php">About</a>
             </div>
         </div>
     </nav>
