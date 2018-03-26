@@ -7,7 +7,7 @@ This is a project for the WEB1 module made by Polina Rymshina and Matei Voicu, o
 * Easily send them an email
 
 ### Installation
-No installation required, just access the platform at [this website](http://i395873.hera.fhict.nl/)!
+No installation required, just access the platform at [this website](http://i395873.hera.fhict.nl/pagesPHP/index.php)!
 
 ### Usage
 From the main page, click on ___My People___ to be taken to the list. From there, you can either scroll through all of the available entries, or search for a specific person using the search bar in the top right. Once you've found who you were looking for, you can click on their image and you will be taken to their profile page, from where you can see their information, send them an email, or start a conversation.
