@@ -18,7 +18,14 @@ if (isset($_POST["inputEmail"]) && isset($_POST["inputPassword"])) {
     $conn = null;
 
     //THIS WILL BE CHANGED TO BCRYPT
-    if (md5($pwd) === ($result[0]['password'])) {
+    if (md5($pwd) === $result[0]['password']) {
+        if (isset($_POST["rememberme"])) {
+            setcookie("userid", "admin", 2147483647, "/");
+        } else {
+            setcookie("userid", "admin", 0, "/");
+        }
+    }
+    elseif (password_verify($pwd, $result[0]['password'])){
         if (isset($_POST["rememberme"])) {
             setcookie("userid", "admin", 2147483647, "/");
         } else {
