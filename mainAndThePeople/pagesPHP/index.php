@@ -75,16 +75,7 @@
     <p class="m-1"></p>
     <div class="jumbotron bg-white mb-0">
         <div class="row ml-2 mr-2">
-            <div class="col-sm-3 mb-3 justify-content-center text-center left"><img src="../img/iron-man.jpg" alt="Person Of The Day"></div>
-            <div class="col-sm-9 justify-content-center">
-                <h1 class="display-5"><strong>The Person Of the Day</strong></h1>
-                <p class="lead">Tony Stark is&nbsp;a&nbsp;teacher at&nbsp;Fontys University Of&nbsp;Applied Sciences.</p>
-                <p class="lead">This gentleman has graduated MIT and has worked in&nbsp;Stark Industries Inc.
-                    In&nbsp;2001&nbsp;he has decided to&nbsp;become a&nbsp;teacher and joined the team
-                    of&nbsp;Fontys. </p>
-                <p class="lead">Tony is skilled at electrical engineering and physics.
-                    In&nbsp;his free time Tony builds robots and helps saving the world.</p>
-            </div>
+            <?php require ("../php/potd.php")?>
         </div>
     </div>
     <p class="m-1"></p>
