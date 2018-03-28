@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/main.css">
     <title>The Fontys People</title>
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+    <link rel="stylesheet" type="text/css"
+          href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css"/>
     <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
     <script>
-        window.addEventListener("load", function(){
+        window.addEventListener("load", function () {
             window.cookieconsent.initialise({
                 "palette": {
                     "popup": {
@@ -23,12 +24,14 @@
                 },
                 "theme": "classic",
                 "position": "bottom-left"
-            })});
+            })
+        });
     </script>
 </head>
 <body>
 <!--HEADER-->
-<?php $page = 'index.php'; require('../templates/headerTemplate.inc'); ?>
+<?php $page = 'index.php';
+require('../templates/headerTemplate.inc'); ?>
 <div class="websiteContents">
     <div class="slideshow-container">
 
@@ -75,7 +78,7 @@
     <p class="m-1"></p>
     <div class="jumbotron bg-white mb-0">
         <div class="row ml-2 mr-2">
-            <?php require ("../php/potd.php")?>
+            <?php require("../php/potd.php") ?>
         </div>
     </div>
     <p class="m-1"></p>
@@ -84,35 +87,8 @@
             <div class="col-sm-2 justify-content-center">
                 <h1 class="display-5 also-color"><strong>See also</strong></h1>
             </div>
-            <?php require ("../php/randpeople.php");?>
-            <!-- keeping the old code in case we need it or something
-            <div class="col-sm-2 justify-content-center">
-                <h1 class="display-5 also-color"><strong>See also</strong></h1>
-            </div>
-            <div class="col-sm-2 justify-content-center person-circle text-center">
-                <img src="../img/black-widow.jpg" alt="Another person">
-                <div class="collapsible-content">this is
-                 <span id="collapsible-name">
-                        black widow
-                 </span>
-            </div>
-            </div>
-        <div class="col-sm-2 justify-content-center person-circle text-center">
-            <img src="../img/cookie-monster.jpg" alt="Another person">
-            <div class="collapsible-content">this is
-                <span id="collapsible-name">
-                        black widow
-                    </span>
-            </div>
-        </div>
-        <div class="col-sm-2 justify-content-center person-circle text-center">
-            <img src="../img/hulk.jpg" alt="Another person">
-            <div class="collapsible-content">this is
-                <span id="collapsible-name">
-                        black widow
-                    </span>
-            </div>
-        </div>-->
+            <?php require("../php/randpeople.php"); ?>
+
         </div>
     </div>
 </div>
