@@ -30,14 +30,14 @@
     </header>
 <div class="websiteContents">
     <div class="signup-form">
-        <form method="request" onsubmit="return validateSignup();">
+        <form method="post" action="../php/addtodb.php" onsubmit="return validateSignup();">
             <div class="form-row">
                 <div class="form-group col-5">
                     <label for="inputEmail">Email</label>
                     <span class="input-errors">
                         <span id="emailInvalidFormat">Email is not in a valid format</span>
                     </span>
-                    <input type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="Email" required>
+                    <input type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="Email" required maxlength=100>
                 </div>
             </div>
             <div class="form-row">
@@ -47,38 +47,37 @@
                         <span id="passTooShortError">The password you entered must be at least 8 characters long</span>
                         <span id="passTooSimpleError">The password you entered is too simple</span>
                     </span>
-                    <input type="password" class="form-control" id="inputPassword" name ="inputPassword" placeholder="Password" required minlength=8>
+                    <input type="password" class="form-control" id="inputPassword" name ="inputPassword" placeholder="Password" required minlength=8 maxlength=100>
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group col-5">
                     <label for="inputAddress">Address</label>
-                    <input type="text" class="form-control" name="inputAddress" id="inputAddress" placeholder="Street name 55">
+                    <input type="text" class="form-control" name="inputAddress" id="inputAddress" placeholder="Street name 55" maxlength=50>
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group col-5">
                     <label for="inputPostalcode">Postal code</label>
-                    <input type="text" name="inputPostalcode" class="form-control" id="inputPostalcode" placeholder="1234AB">
+                    <input type="text" name="inputPostalcode" class="form-control" id="inputPostalcode" placeholder="1234AB" maxlength=8>
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group col-5">
                     <label for="inputCity">City</label>
-                    <input type="text" name="inputCity" class="form-control" id="inputCity">
+                    <input type="text" name="inputCity" class="form-control" id="inputCity" maxlength=100>
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group col-5">
-                    <label for="inputGender">Gender</label>
+                    <label for="inputStatus">Status</label>
                     <span class="input-errors">
-                        <span id="genderNoChoiceError">You did not select a gender</span>
+                        <span id="genderNoChoiceError">You did not select your status</span>
                     </span>
-                    <select id="inputGender" class="form-control" name="inputGender">
+                    <select id="inputStatus" class="form-control" name="inputStatus">
                         <option selected>Choose...</option>
-                        <option>Male</option>
-                        <option>Female</option>
-                        <option>Would rather not tell</option>
+                        <option>Student</option>
+                        <option>Teacher</option>
                     </select>
                 </div>
             </div>

@@ -1,8 +1,6 @@
 <?php
     if (isset($_COOKIE["userid"])){
-        if ($_COOKIE["userid"] === "admin"){
-            $content = file_get_contents("../templates/myPageTemplate.inc", true);
-        }
+        $content = file_get_contents("../templates/myPageTemplate.inc", true);
     }
     else{
         $content = file_get_contents("../templates/loginTemplate.inc", true);

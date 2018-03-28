@@ -882,3 +882,7 @@ video {
     color: red;
     display: none;
 }
+.logout{
+    position: relative;
+    left:95%;
+}

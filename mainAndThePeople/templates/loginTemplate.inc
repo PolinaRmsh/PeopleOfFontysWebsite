@@ -11,5 +11,6 @@
             </label>
         </div>
         <button class="btn btn-lg btn-primary btn-block" type="submit" style="background-color: #3f51b5">Sign in</button>
+        <a class="container" href="../pagesPHP/signup.php">Don't have an account?</a>
     </form>
 </div>

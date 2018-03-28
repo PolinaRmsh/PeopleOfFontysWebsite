@@ -1,5 +1,6 @@
 <!--User page contents template-->
 <div class="websiteContents">
+    <a href="../php/logout.php" class="logout"> Log out</a>
     <div class="row">
         <div class="col-sm-2">
             <div class="person-circle text-center justify-content-md-center">
