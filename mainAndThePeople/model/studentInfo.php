@@ -2,8 +2,8 @@
 /**
  * Created by PhpStorm.
  * User: Polina
- * Date: 26.03.2018
- * Time: 23:09
+ * Date: 28.03.2018
+ * Time: 11:15
  */
 //connect
 function loadUsers()
@@ -11,7 +11,7 @@ function loadUsers()
     $conn = new PDO('mysql:host=localhost;dbname=peoplefontys', 'root', '');
 
     //do things
-    $sql = "SELECT name, image, status, address, aboutmyself, studies, experience, skills, interests, email FROM people";
+    $sql = "SELECT name, image, status, address, aboutmyself, studies, experience, skills, interests, email FROM people WHERE status='Student'";
     $stmt = $conn->prepare($sql);
     $stmt->execute();
     $users = $stmt->fetchAll();

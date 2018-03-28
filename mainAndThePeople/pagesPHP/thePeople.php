@@ -1,17 +1,3 @@
-<?php
-if ($_GET["target"] == "home"){
-    $people = file_get_contents('./peoplePHP.php', true);
-}
-elseif ($_GET["target"] == "student"){
-    $people = file_get_contents('./studentsPHP.php', true);
-}
-elseif ($_GET["target"] == "teacher"){
-    $people = file_get_contents('./teachersPHP.php', true);
-}
-else {
-    $people = file_get_contents('./peoplePHP.php', true);
-}
-?>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -44,8 +30,19 @@ else {
     </nav>
 </header>
 <div class="websiteContents">
-    <?php 
-echo $people; 
+    <?php
+    if ($_GET["target"] == "home"){
+        require('./peoplePHP.php');
+    }
+    elseif ($_GET["target"] == "student"){
+        require('./studentsPHP.php');
+    }
+    elseif ($_GET["target"] == "teacher"){
+        require('./teachersPHP.php');
+    }
+    else {
+        require('./peoplePHP.php');
+    }
 ?>
 </div>
 <footer class="navbar footer small navbar-expand-lg navbar-light navbar-bg-blue justify-content-between">

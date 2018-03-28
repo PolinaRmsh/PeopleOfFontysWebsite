@@ -16,46 +16,8 @@
 </div>
 <h1 class="pb-3"></h1>
 <div class="pics">
-    <div class="user">
-        <img src="../tile.png" alt="Avatar" class="userImage">
-        <div class="overlay">
-            <div class="userInfo">Emin Thaqi</div>
-            <a class="contactLink" href="index.php">Contact</a>
-        </div>
-    </div>
-    <div class="user two">
-        <img src="../tile.png" alt="Avatar" class="userImage">
-        <div class="overlay">
-            <div class="userInfo">Roxana Paval</div>
-            <a class="contactLink" href="index.php">Contact</a>
-        </div>
-    </div>
-    <div class="user two">
-        <img src="../tile.png" alt="Avatar" class="userImage">
-        <div class="overlay">
-            <div class="userInfo">Ahmet Oztan</div>
-            <a class="contactLink" href="index.php">Contact</a>
-        </div>
-    </div>
-    <div class="user two">
-        <img src="../tile.png" alt="Avatar" class="userImage">
-        <div class="overlay">
-            <div class="userInfo">Roopali Gupta</div>
-            <a class="contactLink" href="index.php">Contact</a>
-        </div>
-    </div>
-    <div class="user two">
-        <img src="../tile.png" alt="Avatar" class="userImage">
-        <div class="overlay">
-            <div class="userInfo">Vladimir Kabzar</div>
-            <a class="contactLink" href="index.php">Contact</a>
-        </div>
-    </div>
-    <div class="user two">
-        <img src="../tile.png" alt="Avatar" class="userImage">
-        <div class="overlay">
-            <div class="userInfo">Marian Jager</div>
-            <a class="contactLink" href="index.php">Contact</a>
-        </div>
-    </div>
+    <?php
+    require ("../model/teacherInfo.php");
+    loadUsers();
+    ?>
 </div>

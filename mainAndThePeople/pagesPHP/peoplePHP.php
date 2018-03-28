@@ -16,53 +16,8 @@
     </div>
     <h1 class="pb-3"></h1>
     <div class="pics">
-        <div class="user">
-            <img src="../tile.png" alt="Avatar" class="userImage">
-            <div class="overlay">
-                <div class="userInfo">John Johnson</div>
-                <button class="myBtn contactLink" href="">Contact</button>
-            </div>
-
-        </div>
-        <div class="modal-popup" id="myModal">
-            <div class="modal-popup-content">
-                <span class="close-modal-popup">&times;</span>
-                <p>Information about the person</p>
-            </div>
-        </div>
-        <div class="user two">
-            <img src="../tile.png" alt="Avatar" class="userImage">
-            <div class="overlay">
-                <div class="userInfo">Albert Einstein</div>
-                <button class="contactLink" href="">Contact</button>
-            </div>
-        </div>
-        <div class="user two">
-            <img src="../tile.png" alt="Avatar" class="userImage">
-            <div class="overlay">
-                <div class="userInfo">Dem Paulson</div>
-                <button class="contactLink" href="index.html">Contact</button>
-            </div>
-        </div>
-        <div class="user two">
-            <img src="../tile.png" alt="Avatar" class="userImage">
-            <div class="overlay">
-                <div class="userInfo">Small man</div>
-                <button class="contactLink" href="index.html">Contact</button>
-            </div>
-        </div>
-        <div class="user two">
-            <img src="../tile.png" alt="Avatar" class="userImage">
-            <div class="overlay">
-                <div class="userInfo">Big woman</div>
-                <button class="contactLink" href="index.html">Contact</button>
-            </div>
-        </div>
-        <div class="user two">
-            <img src="../tile.png" alt="Avatar" class="userImage">
-            <div class="overlay">
-                <div class="userInfo">Pat Pattern</div>
-                <button class="contactLink" href="index.html">Contact</button>
-            </div>
-        </div>
+        <?php
+        require ("../model/userInfo.php");
+        loadUsers();
+        ?>
     </div>
