@@ -52,6 +52,12 @@
             </div>
             <div class="form-row">
                 <div class="form-group col-5">
+                    <label for="inputName">Name</label>
+                    <input type="text" class="form-control" name="inputName" id="inputName" placeholder="Name" maxlength=50>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-5">
                     <label for="inputAddress">Address</label>
                     <input type="text" class="form-control" name="inputAddress" id="inputAddress" placeholder="Street name 55" maxlength=50>
                 </div>

@@ -5,16 +5,18 @@ function validate_data ($data){
     $data = htmlspecialchars($data);
     return $data;
 }
+
 $email = validate_data($_POST["inputEmail"]);
 $pwd = validate_data($_POST["inputPassword"]);
 $pwd = password_hash($pwd, PASSWORD_BCRYPT);
+$name = validate_data($_POST["inputName"]);
 $address = validate_data($_POST["inputAddress"]);
 $address .= ", " . validate_data($_POST["inputPostalcode"]);
 $address .= ", " . validate_data($_POST["inputCity"]);
 $status = validate_data($_POST["inputStatus"]);
 
 $conn = new PDO('mysql:host=localhost;dbname=peoplefontys','root','');
-$sql = "INSERT INTO people (status, address, email, password) VALUES ('".$status."', '".$address."', '".$email."', '".$pwd."')";
+$sql = "INSERT INTO people (status, name, address, email, password) VALUES ('".$status."', '".$name."', '".$address."', '".$email."', '".$pwd."')";
 $stmt = $conn->prepare($sql);
 $stmt->execute();
 $conn = null;
