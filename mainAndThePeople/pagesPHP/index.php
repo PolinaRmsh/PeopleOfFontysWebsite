@@ -7,6 +7,24 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/main.css">
     <title>The Fontys People</title>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+    <script>
+        window.addEventListener("load", function(){
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#303f9f"
+                    },
+                    "button": {
+                        "background": "#ff5722",
+                        "text": "#ffffff"
+                    }
+                },
+                "theme": "classic",
+                "position": "bottom-left"
+            })});
+    </script>
 </head>
 <body>
 <!--HEADER-->
