@@ -6,7 +6,7 @@ function validate_data ($data){
     return $data;
 }
 try{
-$avatar = addslashes((file_get_contents("../img/avatar.jpeg", true)));
+$avatar = addslashes((file_get_contents("../img/defaultavatar.jpeg", true)));
 $email = validate_data($_POST["inputEmail"]);
 $pwd = validate_data($_POST["inputPassword"]);
 $pwd = password_hash($pwd, PASSWORD_BCRYPT);
