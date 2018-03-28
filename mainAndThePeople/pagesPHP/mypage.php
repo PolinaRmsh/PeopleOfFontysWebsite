@@ -1,12 +1,3 @@
-<?php
-    if (isset($_COOKIE["userid"])){
-        $content = file_get_contents("../templates/myPageTemplate.inc", true);
-    }
-    else{
-        $content = file_get_contents("../templates/loginTemplate.inc", true);
-    }
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,7 +12,13 @@
 <!--HEADER-->
 <?php $page = 'mypage.php'; require('../templates/headerTemplate.inc'); ?>
 <!--BODY-->
-<?php echo $content; ?>
+<?php
+if (isset($_COOKIE["userid"])) {
+    require('../templates/myPageTemplate.inc');
+} else {
+    require('../templates/loginTemplate.inc');
+}
+?>
 <!--FOOTER-->
 <?php require('../templates/footerTemplate.inc'); ?>
 

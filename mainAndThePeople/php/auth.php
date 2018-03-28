@@ -16,6 +16,8 @@ if (isset($_POST["inputEmail"]) && isset($_POST["inputPassword"])) {
     $stmt->execute();
     $result = $stmt->fetchAll();
     $conn = null;
+    session_start();
+    $_SESSION["useremail"]=$email;
 
     //THIS WILL BE CHANGED TO BCRYPT
     if (md5($pwd) === $result[0]['password']) {
