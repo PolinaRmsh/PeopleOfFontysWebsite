@@ -29,7 +29,7 @@
         </div>
         <div class="col-sm-4">
             <div id="about-idea-content-picture">
-                <img src="../icon.png" alt="Placeholder text">
+                <img src="../img/passion.jpg" alt="Placeholder text">
             </div>
         </div>
     </div>

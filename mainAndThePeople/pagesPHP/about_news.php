@@ -17,64 +17,39 @@
     <a id="about-navbar-right" href="about_contact.php">Contact Us</a>
 </div>
 <div class="websiteContents">
-    <div id="about-news-content-text">
+    <div class="row">
+    <div class="col-sm" id="about-news-content-text">
         <div class="display-5">Feb 2018 - website creation kickoff</div>
         <p>
-            Now this is the story all about how
-            My life got flipped, turned upside down
-            And I'd like to take a minute just sit right there
-            I'll tell you how I became the prince of a town called Bel-air
-
-            In west Philadelphia born and raised
-            On the playground where I spent most of my days
-            Chilling out, maxing, relaxing all cool
-            And all shooting some b-ball outside of the school
-            When a couple of guys, they were up to no good
-            Started making trouble in my neighbourhood
-            I got in one little fight and my mom got scared
-            And said "You're moving with your auntie and uncle in Bel-air"
+            The website was started in the beginning of February by two Fontys University students from ICT and Software
+            stream - Polina Rymshina and Matei Voicu. The website is the assignment for the course WEB1. It is planned
+            as a database of the teachers and students of Fontys University, helping them find each other and each
+            others contact credentials. In the future the website is planned to be a platform for communication as well,
+            however on early stages of development it is meant just to look up a person.
         </p>
         <hr>
         <div class="display-5">Feb 2018 - learning to use HTML and CSS</div>
         <p>
-            Now this is the story all about how
-            My life got flipped, turned upside down
-            And I'd like to take a minute just sit right there
-            I'll tell you how I became the prince of a town called Bel-air
-
-            In west Philadelphia born and raised
-            On the playground where I spent most of my days
-            Chilling out, maxing, relaxing all cool
-            And all shooting some b-ball outside of the school
-            When a couple of guys, they were up to no good
-            Started making trouble in my neighbourhood
-            I got in one little fight and my mom got scared
-            And said "You're moving with your auntie and uncle in Bel-air"
+            The first assignment for the course WEB1 - making the layout of the website with HTML and CSS. First we have created
+            a design document, planning how the website should look wireframe-wise. We have divided all the work half for each person.
+             For the styling we have used plain CSS first, but on later stages of the project turned to Bootstrap, to make the website
+            responsive.
+            It took less than two weeks to finish the layout and styling, and the next task is to create the actions on the website
+            using JavaScript!
         </p>
         <hr>
         <div class="display-5">More news coming soon!</div>
         <p>
-            Now this is the story all about how
-            My life got flipped, turned upside down
-            And I'd like to take a minute just sit right there
-            I'll tell you how I became the prince of a town called Bel-air
-
-            In west Philadelphia born and raised
-            On the playground where I spent most of my days
-            Chilling out, maxing, relaxing all cool
-            And all shooting some b-ball outside of the school
-            When a couple of guys, they were up to no good
-            Started making trouble in my neighbourhood
-            I got in one little fight and my mom got scared
-            And said "You're moving with your auntie and uncle in Bel-air"
+           We are still working on the website and constantly improving it. You can send us your ideas for the website using the
+            contact form on the Contact Us page. Stay tuned for more news!
         </p>
     </div>
-    <div id="about-news-content-picture">
+    <div class="col-sm" id="about-news-content-picture">
         <figure>
-            <img src="../icon.png"
+            <img class="img-fluid" src="../img/three.jpg"
                  alt="Placeholder text">
-            <figcaption>Placeholder</figcaption>
         </figure>
+    </div>
     </div>
 </div>
 <?php require('../templates/footerTemplate.inc'); ?>

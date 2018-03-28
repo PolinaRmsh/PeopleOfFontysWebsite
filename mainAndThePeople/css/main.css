@@ -382,12 +382,14 @@ hr {
     background-color: #f1f1f1;
     position: relative;
 }
+.about
 
 
 /*COLLAPSIBLES FOR THE INDEX PAGE*/
 .collapsible-content{
     display: none;
-    background-color: red;
+    background-color: rgba(197, 202, 233, 0.8);
+    padding: 5pt;
 }
 
 /* /////////////////////////////////////////////// */

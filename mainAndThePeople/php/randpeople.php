@@ -23,7 +23,7 @@ if ($count >= 3){
         $name = $people[$rands[$i]]["name"];
         echo "<div class=\"col-sm-2 justify-content-center person-circle text-center\">
                 <img src=\"data:image/jpeg;base64, {$image}\" alt=\"Another person\">
-                <div class=\"collapsible-content\">this is
+                <div class=\"collapsible-content lead\">This is
                 <span id=\"collapsible-name\">
                        {$name}
                 </span>
