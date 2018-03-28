@@ -75,16 +75,35 @@
             <div class="col-sm-2 justify-content-center">
                 <h1 class="display-5 also-color"><strong>See also</strong></h1>
             </div>
+            <?php require ("../php/randpeople.php");?>
+            <!-- keeping the old code in case we need it or something
+            <div class="col-sm-2 justify-content-center">
+                <h1 class="display-5 also-color"><strong>See also</strong></h1>
+            </div>
             <div class="col-sm-2 justify-content-center person-circle text-center">
                 <img src="../img/black-widow.jpg" alt="Another person">
-                <div class="collapsible-content">this is black widow</div>
+                <div class="collapsible-content">this is
+                 <span id="collapsible-name">
+                        black widow
+                 </span>
             </div>
-            <div class="col-sm-2 justify-content-center person-circle text-center">
-                <img src="../img/cookie-monster.jpg" alt="Another person">
             </div>
-            <div class="col-sm-2 justify-content-center person-circle text-center">
-                <img src="../img/hulk.jpg" alt="Another person">
+        <div class="col-sm-2 justify-content-center person-circle text-center">
+            <img src="../img/cookie-monster.jpg" alt="Another person">
+            <div class="collapsible-content">this is
+                <span id="collapsible-name">
+                        black widow
+                    </span>
             </div>
+        </div>
+        <div class="col-sm-2 justify-content-center person-circle text-center">
+            <img src="../img/hulk.jpg" alt="Another person">
+            <div class="collapsible-content">this is
+                <span id="collapsible-name">
+                        black widow
+                    </span>
+            </div>
+        </div>-->
         </div>
     </div>
 </div>

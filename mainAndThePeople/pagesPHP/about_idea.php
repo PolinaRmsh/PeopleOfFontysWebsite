@@ -21,8 +21,10 @@
         <div class="col-sm-8">
                 <div class="display-5">The idea behind this app</div>
                 <p>
-                    This will be some text about the idea of this website and whatnot. Lorem ipsum for now the
-                    quick brown fox jumps over the lazy dog.
+                    This website came to be as a result of us needing to make a website for WEB1.
+                    The idea was to have something similar to what the "Lecturers and staff" link on the FHICT portal is, but also include students.
+                    It was a bit tricky at times to figure out everything, but here we are!
+                    There's still a useless placeholder image on this page.
                 </p>
         </div>
         <div class="col-sm-4">

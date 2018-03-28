@@ -5,7 +5,8 @@ function validate_data ($data){
     $data = htmlspecialchars($data);
     return $data;
 }
-
+try{
+$avatar = addslashes((file_get_contents("../img/avatar.jpeg", true)));
 $email = validate_data($_POST["inputEmail"]);
 $pwd = validate_data($_POST["inputPassword"]);
 $pwd = password_hash($pwd, PASSWORD_BCRYPT);
@@ -16,11 +17,14 @@ $address .= ", " . validate_data($_POST["inputCity"]);
 $status = validate_data($_POST["inputStatus"]);
 
 $conn = new PDO('mysql:host=localhost;dbname=peoplefontys','root','');
-$sql = "INSERT INTO people (status, name, address, email, password) VALUES ('".$status."', '".$name."', '".$address."', '".$email."', '".$pwd."')";
+$sql = "INSERT INTO people (status, name, image, address, email, password) VALUES ('".$status."', '".$name."','".$avatar."' ,'".$address."', '".$email."', '".$pwd."')";
 $stmt = $conn->prepare($sql);
 $stmt->execute();
 $conn = null;
-
+}
+catch(Exception $e){
+    echo $e->getMessage();
+}
 //need to chane userid value to something else
 setcookie("userid", "admin", 0, "/");
 
