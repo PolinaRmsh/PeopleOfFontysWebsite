@@ -9,46 +9,23 @@
     <title>The People</title>
 </head>
 <body>
-<header>
-    <nav class="navbar navbar-expand-lg navbar-light navbar-bg-blue justify-content-between">
-        <a class="logoImage" href="index.php">
-            <img src="../img/group(4).png" alt="Company logo">
-        </a>
-        <a class="logoBtn" href="index.php">The Fontys People </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-            <div class="navbar-nav navbar-right ml-auto">
-                <a class="nav-item" href="index.php">Home</a>
-                <a class="nav-item active" href="thePeople.php?target=home">The People</a>
-                <a class="nav-item" href="mypage.php">My Page</a>
-                <a class="nav-item" href="about_news.php">About</a>
-            </div>
-        </div>
-    </nav>
-</header>
+<?php $page = 'thepeople.php';
+require('../templates/headerTemplate.inc'); ?>
+
 <div class="websiteContents">
     <?php
-    if ($_GET["target"] == "home"){
+    if ($_GET["target"] == "home") {
         require('./peoplePHP.php');
-    }
-    elseif ($_GET["target"] == "student"){
+    } elseif ($_GET["target"] == "student") {
         require('./studentsPHP.php');
-    }
-    elseif ($_GET["target"] == "teacher"){
+    } elseif ($_GET["target"] == "teacher") {
         require('./teachersPHP.php');
-    }
-    else {
+    } else {
         require('./peoplePHP.php');
     }
-?>
+    ?>
 </div>
-<footer class="navbar footer small navbar-expand-lg navbar-light navbar-bg-blue justify-content-between">
-    <div class="navbar-text text-white">Copyright © 2018, Polina Rymshina, Matei Voicu</div>
-</footer>
-
+<?php require('../templates/footerTemplate.inc'); ?>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

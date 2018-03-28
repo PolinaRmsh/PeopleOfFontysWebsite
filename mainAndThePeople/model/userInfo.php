@@ -17,7 +17,7 @@ function loadUsers()
     $users = $stmt->fetchAll();
     foreach ($users as $user) {
         $image = base64_encode($user['image']);
-        echo "<div class='user two'>
+        echo "<div class='user'>
             <img src=\"data:image/jpeg;base64, {$image}\" alt='Avatar' class='userImage'>
             <div class='overlay'>
                 <div class='userInfo'>{$user['name']}</div>

@@ -108,6 +108,7 @@ body {
     padding: 2%;
     position: inherit;
     margin: 0 auto;
+    min-height: 700px;
 }
 
 /* ///////////////////////////////////////////// */
@@ -482,6 +483,7 @@ hr {
     border-left: none; /* Prevent double borders */
     cursor: pointer;
     border-radius: 0 8px 8px 0;
+    height: 47.5px;
 }
 
 .middleMenuSearch button:hover {
@@ -508,11 +510,9 @@ hr {
     top: 60px;
     float: left;
     width: 16%;
+    padding: 5px;
 }
 
-.user.two {
-    margin-left: 10.37px;
-}
 
 /* Clear floats */
 .pics:after {

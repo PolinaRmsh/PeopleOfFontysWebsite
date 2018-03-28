@@ -29,11 +29,13 @@
         </nav>
     </header>
 <div class="websiteContents">
-    <div class="signup-form">
+    <div class="signup-form jumbotron-fluid bg-white">
+        <h1 class="display-4">Sign up</h1>
+        <div class="mb-4"></div>
         <form method="post" action="../php/addtodb.php" onsubmit="return validateSignup();">
             <div class="form-row">
                 <div class="form-group col-5">
-                    <label for="inputEmail">Email</label>
+                    <label class="lead" for="inputEmail">Email *</label>
                     <span class="input-errors">
                         <span id="emailInvalidFormat">Email is not in a valid format</span>
                     </span>
@@ -42,7 +44,7 @@
             </div>
             <div class="form-row">
                 <div class="form-group col-5">
-                    <label for="inputPassword">Password</label>
+                    <label class="lead" for="inputPassword">Password *</label>
                     <span class="input-errors">
                         <span id="passTooShortError">The password you entered must be at least 8 characters long</span>
                         <span id="passTooSimpleError">The password you entered is too simple</span>
@@ -52,31 +54,31 @@
             </div>
             <div class="form-row">
                 <div class="form-group col-5">
-                    <label for="inputName">Name</label>
-                    <input type="text" class="form-control" name="inputName" id="inputName" placeholder="Name" maxlength=50>
+                    <label class="lead" for="inputName">Name *</label>
+                    <input type="text" class="form-control" name="inputName" id="inputName" placeholder="Name" maxlength=50 required>
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group col-5">
-                    <label for="inputAddress">Address</label>
+                    <label class="lead" for="inputAddress">Address</label>
                     <input type="text" class="form-control" name="inputAddress" id="inputAddress" placeholder="Street name 55" maxlength=50>
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group col-5">
-                    <label for="inputPostalcode">Postal code</label>
+                    <label class="lead" for="inputPostalcode">Postal code</label>
                     <input type="text" name="inputPostalcode" class="form-control" id="inputPostalcode" placeholder="1234AB" maxlength=8>
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group col-5">
-                    <label for="inputCity">City</label>
+                    <label class="lead" for="inputCity">City</label>
                     <input type="text" name="inputCity" class="form-control" id="inputCity" maxlength=100>
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group col-5">
-                    <label for="inputStatus">Status</label>
+                    <label class="lead" for="inputStatus">Status</label>
                     <span class="input-errors">
                         <span id="genderNoChoiceError">You did not select your status</span>
                     </span>
