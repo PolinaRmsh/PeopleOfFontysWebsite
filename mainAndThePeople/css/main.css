@@ -560,7 +560,7 @@ hr {
     background-color: #FF5722;
 }
 
-.user:hover .overlay {
+.user:hover .overlay{
     opacity: 1;
 }
 
@@ -905,3 +905,5 @@ video {
     position: relative;
     left:95%;
 }
+
+#changepic-

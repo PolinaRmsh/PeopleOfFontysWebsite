@@ -93,6 +93,10 @@ function loadPerson()
     <form id='changepic' action='../php/upload.php' method='post' enctype=\"multipart/form-data\">
         <input type='file' id='changepic-input' name='newPic'><br>JPEG/JPG files only</input>
         <button type='submit' id='changepic-button'>Submit</button>
+<<<<<<< HEAD
+=======
+    </form>
+>>>>>>> d5ea75a... changing profile picture
     <hr>
     <div class=\"mypage-bottom-info\">
         <div class='container container-position'>
