@@ -10,7 +10,7 @@ if (isset($_POST["inputEmail"]) && isset($_POST["inputPassword"])) {
     $pwd = validate_data($_POST["inputPassword"]);
     $email = $_POST["inputEmail"];
     $pwd = $_POST["inputPassword"];
-    $conn = new PDO('mysql:host=localhost;dbname=peoplefontys','root','');
+    $conn = new PDO('mysql:host=studmysql01.fhict.local;dbname=dbi395873','dbi395873','peoplefontys123');
     $sql = "SELECT password FROM people WHERE email = '".$email."'";
     $stmt = $conn->prepare($sql);
     $stmt->execute();

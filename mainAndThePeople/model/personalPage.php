@@ -8,7 +8,7 @@
 session_start();
 function loadPerson()
 {
-    $conn = new PDO('mysql:host=localhost;dbname=peoplefontys', 'root', '');
+    $conn = new PDO('mysql:host=studmysql01.fhict.local;dbname=dbi395873','dbi395873','peoplefontys123');
     // NO WORKEY
     //
 

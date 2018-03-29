@@ -16,7 +16,7 @@ $address .= ", " . validate_data($_POST["inputPostalcode"]);
 $address .= ", " . validate_data($_POST["inputCity"]);
 $status = validate_data($_POST["inputStatus"]);
 
-$conn = new PDO('mysql:host=localhost;dbname=peoplefontys','root','');
+    $conn = new PDO('mysql:host=studmysql01.fhict.local;dbname=dbi395873','dbi395873','peoplefontys123');
 $sql = "INSERT INTO people (status, name, image, address, email, password) VALUES ('".$status."', '".$name."','".$avatar."' ,'".$address."', '".$email."', '".$pwd."')";
 $stmt = $conn->prepare($sql);
 $stmt->execute();

@@ -3,7 +3,7 @@
  * potd = person of the day
  */
 
-$conn = new PDO('mysql:host=localhost;dbname=peoplefontys', 'root', '');
+$conn = new PDO('mysql:host=studmysql01.fhict.local;dbname=dbi395873','dbi395873','peoplefontys123');
 
 $sql = "SELECT * FROM people WHERE email = 'p.rymshina@student.fontys.nl'";
 $stmt = $conn->prepare($sql);
