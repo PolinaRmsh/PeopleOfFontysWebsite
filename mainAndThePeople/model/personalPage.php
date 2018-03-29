@@ -23,10 +23,11 @@ function loadPerson()
 
     //do things
     $emailq = $_SESSION["useremail"];
-    $sql = "SELECT name, image, status, address, aboutmyself, studies, experience, skills, interests FROM people WHERE email = '".$emailq."'";
+    $sql = "SELECT name, image, status, address, aboutmyself, studies, experience, skills, interests FROM people WHERE email = '" . $emailq . "'";
     $stmt = $conn->prepare($sql);
     $stmt->execute();
     $users = $stmt->fetchAll();
+    if (!isset($_POST['inputChange'])){$_POST['inputChange']="";}
     foreach ($users as $user) {
         $image = base64_encode($user['image']);
         echo "
@@ -52,7 +53,25 @@ function loadPerson()
     </div>
     <hr>
     <div class=\"mypage-bottom-info\">
-        <h3> Studies </h3>
+        <div class='container'>
+         <div class='row '>
+        <h3 class='col-1 pl-0'> Studies </h3>
+        <button type=\"button\" class='btn btn-outline-secondary btn-sm lead col-1 h-25'
+        data-toggle=\"collapse\" href=\"#collapseExample\" role=\"button\" aria-expanded=\"false\" aria-controls=\"collapseExample\">Edit</button>
+        <div class=\"collapse\" id=\"collapseExample\">
+        <div class=\"card card-body\">
+        <form role=\"form\" action=\"../model/changesMyPage.php\" method=\"post\">
+        <label for=\"inputChange\">Your changes</label>
+        <input type=\"text\" class=\"form-control\" id=\"inputChange\" name=\"inputChange\" placeholder=\"Change\" 
+        value=\"{$_POST['inputChange']}\" >
+        <div class='mb-3'></div>
+        <input id=\"btnSend\" type=\"submit\" name=\"btnSend\" value=\"Send\"
+                   class=\"btn btn-primary contactbtn-color\">
+        </form>
+        </div>
+        </div>
+        </div>
+        </div>
         <p id=\"mypage-studies-content\">
             {$user['studies']}
         </p>
@@ -77,4 +96,5 @@ function loadPerson()
 //disconnect
     $conn = null;
 }
+
 ?>
