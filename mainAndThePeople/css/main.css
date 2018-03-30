@@ -799,7 +799,27 @@ hr {
     color: #303F9F;
     font-weight: bold;
 }
-
+.container-position{
+    padding-left: 2%;
+    margin-left: 0;
+    max-width: inherit!important;
+}
+.btn-colour{
+    background-color: rgba(197, 202, 233, 0.35);
+    width: 3rem !important;
+    max-width: 3rem!important;
+}
+.btn-colour:hover{
+    background-color: rgba(197, 202, 233, 0.8);
+}
+.container-position .row{
+    margin-left: 0!important;
+}
+.btn-about{
+    max-width: 100% !important;
+    max-height: 30px;
+    height: 30px;
+}
 
 #top-info-separator {
     border-bottom: 1px black solid;

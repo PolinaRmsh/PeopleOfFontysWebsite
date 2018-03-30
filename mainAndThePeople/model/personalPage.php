@@ -42,22 +42,60 @@ function loadPerson()
             <div class=\"mypage-top-text\">
                 <div class=\"display-5 mb-1\" id=\"person-name\">{$user['name']}</div>
                 <div class=\"lead mb-3\">Status: {$user['status']}</div>
-                <div><Strong>About myself: </Strong>
+                <div class='row'>
+                <div class='col-6'><Strong>About myself: </Strong>
                     {$user['aboutmyself']}
                 </div>
+                 <button type=\"button\" class='btn btn-colour btn-sm lead col-1 float-right btn-about'
+                data-toggle=\"collapse\" href=\"#collapseAbout\" role=\"button\" aria-expanded=\"false\" 
+                aria-controls=\"collapseAbout\"><i class=\"fas fa-edit\"></i></button>
+                <div class=\"collapse\" id=\"collapseAbout\">
+                 <div class=\"card card-body\">
+                <form role=\"form\" action=\" ../model/changesMyPage.php\" method=\"post\">
+                <label for=\"inputChange\">Your changes</label>
+             <input type=\"text\" class=\"form-control\" id=\"inputChangeAbout\" name=\"inputChangeAbout\" placeholder=\"Change\" 
+              value=\"{$_POST['inputChangeAbout']}\">
+             <div class='mb-3'></div>
+                <input id=\"btnSend\" type=\"submit\" name=\"btnSend\" value=\"Send\"
+                   class=\"btn btn-primary contactbtn-color\">
+            </form>
+            </div>
+            </div>
+                
+                </div>
+                
             </div>
         </div>
         <div class=\"col-sm-2\">
-            <div id=\"contact-info\"><p class='lead'>Address</p>{$user['address']}</div>
+            <div id=\"contact-info\">
+            <p class='lead'>Address</p>
+            {$user['address']}
+            <div class='mb-3'></div>
+            <button type=\"button\" class='btn btn-colour btn-sm lead h-25'
+               data-toggle=\"collapse\" href=\"#collapseAddress\" role=\"button\" aria-expanded=\"false\" 
+               aria-controls=\"collapseAddress\"><i class=\"fas fa-edit\"></i></button>
+            <div class=\"collapse\" id=\"collapseAddress\">
+        <div class=\"card card-body\">
+        <form role=\"form\" action=\"../model/changesMyPage.php\" method=\"post\">
+        <label for=\"inputChangeAddress\">Your changes</label>
+        <input type=\"text\" class=\"form-control\" id=\"inputChangeAddress\" name=\"inputChangeAddress\" placeholder=\"Change\" 
+        value=\"{$_POST['inputChangeAddress']}\">
+        <div class='mb-3'></div>
+        <input id=\"btnSend\" type=\"submit\" name=\"btnSend\" value=\"Send\"
+                   class=\"btn btn-primary contactbtn-color\">
+        </form>
+        </div>
+        </div>
+            </div>
         </div>
     </div>
     <hr>
     <div class=\"mypage-bottom-info\">
-        <div class='container'>
+        <div class='container container-position'>
          <div class='row '>
-        <h3 class='col-1 pl-0'> Studies </h3>
-        <button type=\"button\" class='btn btn-outline-secondary btn-sm lead col-1 h-25'
-        data-toggle=\"collapse\" href=\"#collapseExample\" role=\"button\" aria-expanded=\"false\" aria-controls=\"collapseExample\">Edit</button>
+        <h3 class='col-sm pl-0'> Studies </h3>
+        <button type=\"button\" class='btn btn-colour btn-sm lead col-1 float-right h-25'
+        data-toggle=\"collapse\" href=\"#collapseExample\" role=\"button\" aria-expanded=\"false\" aria-controls=\"collapseExample\"><i class=\"fas fa-edit\"></i></button>
         <div class=\"collapse\" id=\"collapseExample\">
         <div class=\"card card-body\">
         <form role=\"form\" action=\"../model/changesMyPage.php\" method=\"post\">
@@ -76,17 +114,73 @@ function loadPerson()
             {$user['studies']}
         </p>
         <hr>
-        <h3> Experience </h3>
+        <div class='container container-position'>
+         <div class='row '>
+        <h3 class='col-sm pl-0'> Experience </h3>
+        <button type=\"button\" class='btn btn-colour btn-sm lead col-1 float-right h-25'
+        data-toggle=\"collapse\" href=\"#collapseExperience\" role=\"button\" aria-expanded=\"false\" aria-controls=\"collapseExperience\">
+        <i class=\"fas fa-edit\"></i>
+        </button>
+        <div class=\"collapse\" id=\"collapseExperience\">
+        <div class=\"card card-body\">
+        <form role=\"form\" action=\"../model/changesMyPage.php\" method=\"post\">
+        <label for=\"inputChange\">Your changes</label>
+        <input type=\"text\" class=\"form-control\" id=\"inputChangeExp\" name=\"inputChangeExp\" placeholder=\"Change\" 
+        value=\"{$_POST['inputChangeExp']}\" >
+        <div class='mb-3'></div>
+        <input id=\"btnSend\" type=\"submit\" name=\"btnSend\" value=\"Send\"
+                   class=\"btn btn-primary contactbtn-color\">
+        </form>
+        </div>
+        </div>
+        </div>
+        </div>
         <p id=\"mypage-experience-content\">
             {$user['experience']}
         </p>
         <hr>
-        <h3> Skills </h3>
+        <div class='container container-position'>
+         <div class='row '>
+        <h3 class='col-sm pl-0'> Skills </h3>
+        <button type=\"button\" class='btn btn-colour btn-sm lead col-1 float-right h-25'
+        data-toggle=\"collapse\" href=\"#collapseSkill\" role=\"button\" aria-expanded=\"false\" aria-controls=\"collapseSkill\"><i class=\"fas fa-edit\"></i></button>
+        <div class=\"collapse\" id = \"collapseSkill\" >
+        <div class=\"card card-body\" >
+        <form role = \"form\" action = \"../model/changesMyPage.php\" method = \"post\" >
+        <label for=\"inputChange\" > Your changes </label >
+        <input type = \"text\" class=\"form-control\" id = \"inputChangeSkill\" name = \"inputChangeSkill\" placeholder = \"Change\" 
+        value = \"{$_POST['inputChangeSkill']}\" >
+        <div class='mb-3' ></div >
+        <input id = \"btnSend\" type = \"submit\" name = \"btnSend\" value = \"Send\"
+                   class=\"btn btn-primary contactbtn-color\" >
+        </form >
+        </div >
+        </div >
+        </div >
+        </div >
         <p id=\"mypage-skill-content\">
             {$user['skills']}
         </p>
         <hr>
-        <h3> Interests</h3>
+        <div class='container container-position'>
+         <div class='row '>
+        <h3 class='col-sm pl-0'> Interests</h3>
+        <button type=\"button\" class='btn btn-colour btn-sm lead col-1 float-right h-25'
+        data-toggle=\"collapse\" href=\"#collapseInterest\" role=\"button\" aria-expanded=\"false\" aria-controls=\"collapseInterest\"><i class=\"fas fa-edit\"></i></button>
+        <div class=\"collapse\" id = \"collapseInterest\" >
+        <div class=\"card card-body\" >
+        <form role = \"form\" action = \"../model/changesMyPage.php\" method = \"post\" >
+        <label for=\"inputChange\" > Your changes </label >
+        <input type = \"text\" class=\"form-control\" id = \"inputChangeInterest\" name = \"inputChangeInterest\" placeholder = \"Change\" 
+        value = \"{$_POST['inputChangeInterest']}\" >
+        <div class='mb-3' ></div >
+        <input id = \"btnSend\" type = \"submit\" name = \"btnSend\" value = \"Send\"
+                   class=\"btn btn-primary contactbtn-color\" >
+        </form >
+        </div >
+        </div >
+        </div >
+        </div >
         <p id=\"mypage-interests-content\">
             {$user['interests']}
         </p>
